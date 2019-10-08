@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+    <title>Jagex Software</title>
+    <style>
+      BODY, TD, P  {
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 13px;
+      }
+      
+      .b {
+        border-style: outset;
+        border-width: 3pt;
+        border-color: #373737;
+      }
+      
+      .e {
+        border: 2px solid #382418;
+      }
+      
+      .c {
+        text-decoration: none;
+      }
+      
+      A.c:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body onload="hideKey();" bgcolor="black" background="/rsimg/background.jpg" text="white" link="#90c040" alink="#90c040" vlink="#90c040">
+    <div name="div" id="div" style="LEFT: 0px; TOP: 0px; POSITION: absolute;">
+      <img border="0" width="2152" height="1007" hspace="0" vspace="0" alt="" src="/rsimg/worldmap/map11.gif">
+    </div>
+    <script type="text/javascript">
+      isNS = document.layers?true:false;
+      isIE = navigator.appName.indexOf("Microsoft") != -1
+      isNS6 = !isIE && document.getElementById?true:false;
+
+      var delay = 15;
+      var myUpTimer = null;
+      var myDownTimer = null;
+      var myLeftTimer = null;
+      var myRightTimer = null;
+      var counter =1;
+
+      function moveIt(x,y) {
+        var divName='div';
+        if( document.layers ) { divName = document.layers[divName]; } else {
+          if( document[divName] ) { divName = document[divName]; } else {
+            if( document.getElementById ) { divName = document.getElementById(divName); } else {
+              if( document.all ) { divName = document.all[divName]; } else {
+                return;
+              }
+            }
+          }
+        }
+        if (divName.style) {divName=divName.style;}
+        if (isNS6) {x*=3; y*=3;}
+        if (parseInt(divName.left) > -1630 && x<0) divName.left=parseInt(divName.left)+x;
+        if (parseInt(divName.left) < 1  && x>0) divName.left=parseInt(divName.left)+x;
+        if (parseInt(divName.top) > -520 && y<0) divName.top=parseInt(divName.top)+y;
+        if (parseInt(divName.top) < 45 && y>0) divName.top=parseInt(divName.top)+y;
+      }
+
+      //initial placement of Map - Lumbridge
+      if(isIE) moveIt(-1629,-425);
+      else moveIt(-550,-150);
+
+      function showKey() {
+        var divName='key';
+        if( document.layers ) { divName = document.layers[divName]; } else {
+          if( document[divName] ) { divName = document[divName]; } else {
+            if( document.getElementById ) { divName = document.getElementById(divName); } else {
+              if( document.all ) { divName = document.all[divName]; } else {
+                return;
+              }
+            }
+          }
+        }
+        if( divName.style ) { divName = divName.style; }
+        divName.visibility='visible';
+      }
+
+      function hideKey() {
+        var divName='key';
+        if( document.layers ) { divName = document.layers[divName]; } else {
+          if( document[divName] ) { divName = document[divName]; } else {
+            if( document.getElementById ) { divName = document.getElementById(divName); } else {
+              if( document.all ) { divName = document.all[divName]; } else {
+                return;
+              }
+            }
+          }
+        }
+        if( divName.style ) { divName = divName.style; }
+        divName.visibility='hidden';
+      }
+    </script>
+    <div style="LEFT: 243px; TOP: 52px; POSITION: absolute;">
+      <a onmousedown="if (myUpTimer==null) myUpTimer=setInterval('moveIt(0,8)', delay);" onmouseup="clearInterval(myUpTimer); myUpTimer=null;" onmouseout="clearInterval(myUpTimer); myUpTimer=null;"><img name="img2" src="/rsimg/worldmap/uparrow.gif" width="47" height="42" border="0"></a>
+    </div>
+    <div style="LEFT: 243px; TOP: 435px; POSITION: absolute;">
+      <a onmousedown="if (myDownTimer==null) myDownTimer = setInterval('moveIt(0,-8)', delay);" onmouseup="clearInterval(myDownTimer); myDownTimer=null;" onmouseout="clearInterval(myDownTimer); myDownTimer=null;"><img src="/rsimg/worldmap/downarrow.gif" width="47" height="42" border="0"></a>
+    </div>
+    <div style="LEFT: 10px; TOP: 243px; POSITION: absolute;">
+      <a onmousedown="if (myLeftTimer==null) myLeftTimer = setInterval('moveIt(8,0)', delay);" onmouseup="clearInterval(myLeftTimer); myLeftTimer=null;" onmouseout="clearInterval(myLeftTimer); myLeftTimer=null;"><img src="/rsimg/worldmap/leftarrow.gif" width="47" height="42" border="0"></a>
+    </div>
+    <div style="LEFT: 460px; TOP: 243px; POSITION: absolute;">
+      <a onmousedown="if (myRightTimer==null) myRightTimer = setInterval('moveIt(-8,0)', delay);" onmouseup="clearInterval(myRightTimer); myRightTimer=null;" onmouseout="clearInterval(myRightTimer); myRightTimer=null;"><img src="/rsimg/worldmap/rightarrow.gif" width="47" height="42" border="0"></a>
+    </div>
+    <div style="LEFT: 135px; TOP: 1px; POSITION: absolute;">
+      <table width="250" bgcolor="black" cellpadding="4">
+        <tr>
+          <td class="e">
+            <center>
+              <b>Map of the RuneScape World</b>
+              <br>
+              <a href="title.html" class="c">Main menu</a>
+              -
+              <a href="manual.html" class="c">Manual</a>
+            </center>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div name="key" id="key" style="LEFT: 60px; TOP: 100px; POSITION: absolute;">
+      <img border="0" width="408" height="284" hspace="0" vspace="0" alt="" src="/rsimg/worldmap/mapkey4.gif">
+    </div>
+    <div style="LEFT: 400px; TOP 15px; POSITION: absolute;">
+      <img src="/rsimg/worldmap/keybutton.gif" border="0" width="43" height="36">
+    </div>
+    <div style="LEFT: 400px; TOP: 0px; POSITION: absolute;">
+      <a onmousedown="showKey()" onmouseout="hideKey()">
+        <img src="https://web.archive.org/web/20030320154946im_/http://www.jagex.com/rsimg/title/blank.gif" border="0" width="43" height="50">
+      </a>
+    </div>
+  </body>
+</html>
