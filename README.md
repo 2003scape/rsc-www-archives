@@ -5,7 +5,7 @@ most of the pages are from the
 [internet archive's wayback machine](http://web.archive.org).
 
 since `runescape.com` is blocked, i used `runescape.co.uk`, `runescape.net`,
-`runescape.co.uk` and the corresponding jagex domains.
+`runescape.org` and the corresponding jagex domains.
 
 ### 2003-rev-a
 
