@@ -1,0 +1,384 @@
+/*
+
+ 0 item name
+ 1 number of items dropped
+ 2 quantity
+ 3 extra info (type, Herb, Rune, Gem)
+ 
+ run
+ 
+ 0 last drop of run (x, index of last drop of run)
+ 1 kills in run (y, kill number of x)
+
+*/
+
+var item = new Array();
+var runs = new Array();
+
+var cwcb = 6;  // column width of checkboxes
+
+var notes = "";
+
+// run 1
+
+item   [0] = [ "Coins", 1, 1, "" ];  // 1
+item   [1] = [ "Coins", 1, 2, "" ];
+item   [2] = [ "Air-rune", 1, 8, "Rune" ];
+item   [3] = [ "Staff", 1, 1, "" ];
+item   [4] = [ "Water-rune", 1, 3, "Rune" ];
+item   [5] = [ "Nothing", 1, 0, "" ];
+item   [6] = [ "Coins", 1, 1, "" ];
+item   [7] = [ "Nature-rune", 1, 1, "Rune" ];
+item   [8] = [ "wizardshat (Black)", 1, 1, "" ];
+item   [9] = [ "Coins", 1, 1, "" ];  // 10
+item  [10] = [ "Staff", 1, 1, "" ];
+item  [11] = [ "Nature-rune", 1, 1, "Rune" ];
+item  [12] = [ "Coins", 1, 1, "" ];
+item  [13] = [ "Coins", 1, 2, "" ];
+item  [14] = [ "Coins", 1, 1, "" ];
+item  [15] = [ "Body-rune", 1, 8, "Rune" ];
+item  [16] = [ "Staff", 1, 1, "" ];
+item  [17] = [ "Staff", 1, 1, "" ];
+item  [18] = [ "Coins", 1, 1, "" ];
+item  [19] = [ "Chaos-rune", 1, 3, "Rune" ];  // 20
+item  [20] = [ "Coins", 1, 18, "" ];
+item  [21] = [ "Earth-rune", 1, 3, "Rune" ];
+item  [22] = [ "Coins", 1, 18, "" ];
+item  [23] = [ "Coins", 1, 1, "" ];
+item  [24] = [ "Nature-rune", 1, 1, "Rune" ];
+item  [25] = [ "Coins", 1, 1, "" ];
+item  [26] = [ "Coins", 1, 2, "" ];
+item  [27] = [ "Coins", 1, 30, "" ];
+item  [28] = [ "Coins", 1, 1, "" ];
+item  [29] = [ "Coins", 1, 1, "" ];  // 30
+item  [30] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item  [31] = [ "Air-rune", 1, 8, "Rune" ];
+item  [32] = [ "Coins", 1, 1, "" ];
+item  [33] = [ "Earth-rune", 1, 3, "Rune" ];
+item  [34] = [ "Nature-rune", 1, 1, "Rune" ];
+item  [35] = [ "Earth-rune", 1, 24, "Rune" ];
+item  [36] = [ "Fire-rune", 1, 3, "Rune" ];
+item  [37] = [ "Nothing", 1, 0, "" ];
+item  [38] = [ "Coins", 1, 2, "" ];
+item  [39] = [ "Coins", 1, 1, "" ];  // 40
+item  [40] = [ "Coins", 1, 1, "" ];
+item  [41] = [ "Nothing", 1, 0, "" ];
+item  [42] = [ "Body-rune", 1, 3, "Rune" ];
+item  [43] = [ "Nothing", 1, 0, "" ];
+item  [44] = [ "Water-rune", 1, 3, "Rune" ];
+item  [45] = [ "Coins", 1, 2, "" ];
+item  [46] = [ "Staff", 1, 1, "" ];
+item  [47] = [ "Coins", 1, 1, "" ];
+item  [48] = [ "Law-rune", 1, 2, "Rune" ];
+item  [49] = [ "Nothing", 1, 0, "" ];  // 50
+item  [50] = [ "Chaos-rune", 1, 1, "Rune" ];
+item  [51] = [ "wizardshat (Black)", 1, 1, "" ];
+item  [52] = [ "Nature-rune", 1, 1, "Rune" ];
+item  [53] = [ "Chaos-rune", 1, 1, "Rune" ];
+item  [54] = [ "Air-rune", 1, 8, "Rune" ];
+item  [55] = [ "Fire-rune", 1, 7, "Rune" ];
+item  [56] = [ "Air-rune", 1, 8, "Rune" ];
+item  [57] = [ "Nothing", 1, 0, "" ];
+item  [58] = [ "Air-rune", 1, 3, "Rune" ];
+item  [59] = [ "Blood-rune", 1, 1, "Rune" ];  // 60
+item  [60] = [ "Coins", 1, 1, "" ];
+item  [61] = [ "Fire-rune", 1, 7, "Rune" ];
+item  [62] = [ "Coins", 1, 18, "" ];
+item  [63] = [ "Staff", 1, 1, "" ];
+item  [64] = [ "Coins", 1, 2, "" ];
+item  [65] = [ "Water-rune", 1, 3, "Rune" ];
+item  [66] = [ "Coins", 1, 2, "" ];
+item  [67] = [ "Coins", 1, 1, "" ];
+item  [68] = [ "Nothing", 1, 0, "" ];
+item  [69] = [ "wizardshat (Black)", 1, 1, "" ];  // 70
+item  [70] = [ "Nature-rune", 1, 1, "Rune" ];
+item  [71] = [ "Staff", 1, 1, "" ];
+item  [72] = [ "Chaos-rune", 1, 1, "Rune" ];
+item  [73] = [ "Chaos-rune", 1, 1, "Rune" ];
+item  [74] = [ "Staff", 1, 1, "" ];
+item  [75] = [ "Nothing", 1, 0, "" ];
+item  [76] = [ "Staff", 1, 1, "" ];
+item  [77] = [ "Chaos-rune", 1, 1, "Rune" ];
+item  [78] = [ "Fire-rune", 1, 7, "Rune" ];
+item  [79] = [ "Coins", 1, 30, "" ];  // 80
+item  [80] = [ "Coins", 1, 1, "" ];
+item  [81] = [ "Nothing", 1, 0, "" ];
+item  [82] = [ "Nothing", 1, 0, "" ];
+item  [83] = [ "Coins", 1, 4, "" ];
+item  [84] = [ "Coins", 1, 1, "" ];
+item  [85] = [ "Nothing", 1, 0, "" ];
+item  [86] = [ "Nature-rune", 1, 1, "Rune" ];
+item  [87] = [ "Nothing", 1, 0, "" ];
+item  [88] = [ "Body-rune", 1, 12, "Rune" ];
+item  [89] = [ "Chaos-rune", 1, 1, "Rune" ];  // 90
+item  [90] = [ "Coins", 1, 4, "" ];
+item  [91] = [ "Coins", 1, 18, "" ];
+item  [92] = [ "Fire-rune", 1, 3, "Rune" ];
+item  [93] = [ "Coins", 1, 2, "" ];
+item  [94] = [ "Coins", 1, 1, "" ];
+item  [95] = [ "Coins", 1, 18, "" ];
+item  [96] = [ "Chaos-rune", 1, 3, "Rune" ];
+item  [97] = [ "Coins", 1, 1, "" ];
+item  [98] = [ "Nothing", 1, 0, "" ];
+item  [99] = [ "Blood-rune", 1, 1, "Rune" ];  // 100
+item [100] = [ "Fire-rune", 1, 3, "Rune" ];
+item [101] = [ "Coins", 1, 1, "" ];
+item [102] = [ "Fire-rune", 1, 8, "Rune" ];
+item [103] = [ "Water-rune", 1, 8, "Rune" ];
+item [104] = [ "wizardshat (Black)", 1, 1, "" ];
+item [105] = [ "Water-rune", 1, 3, "Rune" ];
+item [106] = [ "Staff", 1, 1, "" ];
+item [107] = [ "Nature-rune", 1, 3, "Rune" ];
+item [108] = [ "Staff", 1, 1, "" ];
+item [109] = [ "Nothing", 1, 0, "" ];  // 110
+item [110] = [ "Coins", 1, 2, "" ];
+item [111] = [ "Nothing", 1, 0, "" ];
+item [112] = [ "Coins", 1, 2, "" ];
+item [113] = [ "Nature-rune", 1, 3, "Rune" ];
+item [114] = [ "Coins", 1, 18, "" ];
+item [115] = [ "Water-rune", 1, 12, "Rune" ];
+item [116] = [ "Nature-rune", 1, 1, "Rune" ];
+item [117] = [ "Body-rune", 1, 7, "Rune" ];
+item [118] = [ "Coins", 1, 18, "" ];
+item [119] = [ "Nothing", 1, 0, "" ];  // 120
+item [120] = [ "Coins", 1, 18, "" ];
+item [121] = [ "Coins", 1, 1, "" ];
+item [122] = [ "Chaos-rune", 1, 1, "Rune" ];
+item [123] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [124] = [ "Fire-rune", 1, 3, "Rune" ];
+item [125] = [ "Earth-rune", 1, 24, "Rune" ];
+item [126] = [ "Coins", 1, 2, "" ];
+item [127] = [ "Staff", 1, 1, "" ];
+item [128] = [ "Nothing", 1, 0, "" ];
+item [129] = [ "Nature-rune", 1, 1, "Rune" ];  // 130
+item [130] = [ "Air-rune", 1, 8, "Rune" ];
+item [131] = [ "Coins", 1, 18, "" ];
+item [132] = [ "Water-rune", 1, 3, "Rune" ];
+item [133] = [ "Coins", 1, 30, "" ];
+item [134] = [ "Mind-rune", 1, 3, "Rune" ];
+item [135] = [ "Coins", 1, 1, "" ];
+item [136] = [ "Coins", 1, 1, "" ];
+item [137] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [138] = [ "Chaos-rune", 1, 1, "Rune" ];
+item [139] = [ "Coins", 1, 1, "" ];  // 140
+item [140] = [ "Water-rune", 1, 12, "Rune" ];
+item [141] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [142] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [143] = [ "Coins", 1, 2, "" ];
+item [144] = [ "Chaos-rune", 1, 1, "Rune" ];
+item [145] = [ "Body-rune", 1, 3, "Rune" ];
+item [146] = [ "Coins", 1, 1, "" ];
+item [147] = [ "Nature-rune", 1, 1, "Rune" ];
+item [148] = [ "Coins", 1, 2, "" ];
+item [149] = [ "Coins", 1, 30, "" ];  // 150
+item [150] = [ "Coins", 1, 29, "" ];
+item [151] = [ "Coins", 1, 18, "" ];
+item [152] = [ "Nothing", 1, 0, "" ];
+item [153] = [ "Coins", 1, 1, "" ];
+item [154] = [ "Coins", 1, 1, "" ];
+item [155] = [ "Coins", 1, 1, "" ];
+item [156] = [ "Mind-rune", 1, 3, "Rune" ];
+item [157] = [ "Coins", 1, 2, "" ];
+item [158] = [ "Staff", 1, 1, "" ];
+item [159] = [ "Staff", 1, 1, "" ];  // 160
+item [160] = [ "Body-rune", 1, 3, "Rune" ];
+item [161] = [ "Chaos-rune", 1, 3, "Rune" ];
+item [162] = [ "Coins", 1, 1, "" ];
+item [163] = [ "Earth-rune", 1, 7, "Rune" ];
+item [164] = [ "Chaos-rune", 1, 1, "Rune" ];
+item [165] = [ "Law-rune", 1, 2, "Rune" ];
+item [166] = [ "Coins", 1, 2, "" ];
+item [167] = [ "Coins", 1, 1, "" ];
+item [168] = [ "Chaos-rune", 1, 1, "Rune" ];
+item [169] = [ "Coins", 1, 2, "" ];  // 170
+
+runs [0] = [ 169, 170 ];  // kills 170, drops 170
+
+// run 2
+
+item [170] = [ "Coins", 1, 1, "" ];  // (1)
+item [171] = [ "Coins", 1, 18, "" ];  // (19)
+item [172] = [ "Fire-rune", 1, 8, "Rune" ];  //  (8)
+item [173] = [ "Coins", 1, 18, "" ];  // (37)
+item [174] = [ "Nature-rune", 1, 1, "Rune" ];  //  (1)
+item [175] = [ "Air-rune", 1, 3, "Rune" ];  //  (3)
+item [176] = [ "Nothing", 1, 0, "" ];
+item [177] = [ "Coins", 1, 18, "" ];  // (55)
+item [178] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [179] = [ "Black robe (Wizard's top)", 1, 1, "" ];  //  180
+item [180] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (1)
+item [181] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [182] = [ "Coins", 1, 1, "" ];  //  (56)
+item [183] = [ "Fire-rune", 1, 8, "Rune" ];  //  (16)
+item [184] = [ "Nothing", 1, 0, "" ];
+item [185] = [ "Earth-rune", 1, 8, "Rune" ];  //  (8)
+item [186] = [ "Fire-rune", 1, 3, "Rune" ];  //  (19)
+item [187] = [ "Water-rune", 1, 3, "Rune" ];  //  (3)
+item [188] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [189] = [ "Staff", 1, 1, "" ];  //  190
+item [190] = [ "Coins", 1, 18, "" ];  // (74)
+item [191] = [ "Nothing", 1, 0, "" ];
+item [192] = [ "Coins", 1, 18, "" ];  // (92)
+item [193] = [ "Nature-rune", 1, 1, "Rune" ];  //  (2)
+item [194] = [ "Nothing", 1, 0, "" ];
+item [195] = [ "Nothing", 1, 0, "" ];
+item [196] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [197] = [ "Air-rune", 1, 3, "Rune" ];  //  (6)
+item [198] = [ "Coins", 1, 2, "" ];  //  (94)
+item [199] = [ "Nature-rune", 1, 1, "Rune" ];  //  200  (3)
+item [200] = [ "Coins", 1, 1, "" ];  //  (95)
+item [201] = [ "Coins", 1, 1, "" ];  //  (96)
+item [202] = [ "Nothing", 1, 0, "" ];
+item [203] = [ "Fire-rune", 1, 8, "Rune" ];  //  (27)
+item [204] = [ "Coins", 1, 18, "" ];  //  (114)
+item [205] = [ "wizardshat (Black)", 1, 1, "" ];
+item [206] = [ "Mind-rune", 1, 3, "Rune" ];  //  (3)
+item [207] = [ "Fire-rune", 1, 3, "Rune" ];  //  (30)
+item [208] = [ "Nothing", 1, 0, "" ];
+item [209] = [ "Body-rune", 1, 3, "Rune" ];  //  210  (3)
+item [210] = [ "Coins", 1, 1, "" ];  //  (115)
+item [211] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (2)
+item [212] = [ "Staff", 1, 1, "" ];
+item [213] = [ "Air-rune", 1, 3, "Rune" ];  //  (9)
+item [214] = [ "Coins", 1, 1, "" ];  //  (116)
+item [215] = [ "Coins", 1, 2, "" ];  //  (118)
+item [216] = [ "Water-rune", 1, 3, "Rune" ];  //  (6)
+item [217] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [218] = [ "Staff", 1, 1, "" ];
+item [219] = [ "Coins", 1, 2, "" ];  //  220  (120)
+item [220] = [ "Coins", 1, 1, "" ];  //  (121)
+item [221] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [222] = [ "Air-rune", 1, 3, "Rune" ];  //  (12)
+item [223] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [224] = [ "Body-rune", 1, 8, "Rune" ];  //  (11)
+item [225] = [ "Earth-rune", 1, 3, "Rune" ];  //  (11)
+item [226] = [ "Coins", 1, 1, "" ];  //  (122)
+item [227] = [ "Nothing", 1, 0, "" ];
+item [228] = [ "Coins", 1, 18, "" ];  //  (140)
+item [229] = [ "Coins", 1, 2, "" ];  //  230 (142)
+item [230] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [231] = [ "wizardshat (Black)", 1, 1, "" ];
+item [232] = [ "Coins", 1, 1, "" ];  //  (143)
+item [233] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [234] = [ "Air-rune", 1, 3, "Rune" ];  //  (15)
+item [235] = [ "Nothing", 1, 0, "" ];
+item [236] = [ "Water-rune", 1, 3, "Rune" ];  //  (9)
+item [237] = [ "Mind-rune", 1, 3, "Rune" ];  //  (6)
+item [238] = [ "Nothing", 1, 0, "" ];
+item [239] = [ "Coins", 1, 2, "" ];  //  240  (145)
+item [240] = [ "Water-rune", 1, 8, "Rune" ];  //  (17)
+item [241] = [ "Coins", 1, 18, "" ];  //  (163)
+item [242] = [ "Coins", 1, 1, "" ];  //  (164)
+item [243] = [ "Nothing", 1, 0, "" ];
+item [244] = [ "Coins", 1, 1, "" ];  //  (165)
+item [245] = [ "Air-rune", 1, 3, "Rune" ];  //  (18)
+item [246] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [247] = [ "Nothing", 1, 0, "" ];
+item [248] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (3)
+item [249] = [ "Coins", 1, 1, "" ];  //  250  (166)
+item [250] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (4)
+item [251] = [ "Earth-rune", 1, 3, "Rune" ];  //  (14)
+item [252] = [ "Coins", 1, 1, "" ];  //  (167)
+item [253] = [ "Coins", 1, 18, "" ];  //  (185)
+item [254] = [ "Body-rune", 1, 3, "Rune" ];  //  (14)
+item [255] = [ "wizardshat (Black)", 1, 1, "" ];
+item [256] = [ "Earth-rune", 1, 8, "Rune" ];  //  (22)
+item [257] = [ "Coins", 1, 30, "" ];  //  (215)
+item [258] = [ "Earth-rune", 1, 3, "Rune" ];  //  (25)
+item [259] = [ "Black robe (Wizard's top)", 1, 1, "" ];  //  260
+item [260] = [ "Staff", 1, 1, "" ];
+item [261] = [ "wizardshat (Black)", 1, 1, "" ];
+item [262] = [ "Nothing", 1, 0, "" ];
+item [263] = [ "Staff", 1, 1, "" ];
+item [264] = [ "Coins", 1, 2, "" ];  //  (217)
+item [265] = [ "Coins", 1, 1, "" ];  //  (218)
+item [266] = [ "Nothing", 1, 0, "" ];
+item [267] = [ "Mind-rune", 1, 3, "Rune" ];  //  (9)
+item [268] = [ "Fire-rune", 1, 3, "Rune" ];  //  (33)
+item [269] = [ "Body-rune", 1, 3, "Rune" ];  //  270  (17)
+item [270] = [ "Water-rune", 1, 3, "Rune" ];  //  (20)
+item [271] = [ "Coins", 1, 18, "" ];  //  (236)
+item [272] = [ "Staff", 1, 1, "" ];
+item [273] = [ "Coins", 1, 1, "" ];  //  (237)
+item [274] = [ "Coins", 1, 1, "" ];  //  (238)
+item [275] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (5)
+item [276] = [ "Coins", 1, 1, "" ];  //  (239)
+item [277] = [ "Earth-rune", 1, 8, "Rune" ];  //  (33)
+item [278] = [ "Coins", 1, 30, "" ];  //  (269)
+item [279] = [ "Coins", 1, 1, "" ];  //  280  (270)
+item [280] = [ "Coins", 1, 1, "" ];  //  (271)
+item [281] = [ "Air-rune", 1, 3, "Rune" ];  //  (21)
+item [282] = [ "Water-rune", 1, 8, "Rune" ];  //  (28)
+item [283] = [ "Water-rune", 1, 3, "Rune" ];  //  (31)
+item [284] = [ "Nothing", 1, 0, "" ];
+item [285] = [ "Blood-rune", 1, 1, "Rune" ];  //  (1)
+item [286] = [ "Fire-rune", 1, 8, "Rune" ];  //  (41)
+item [287] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+item [288] = [ "Nothing", 1, 0, "" ];
+item [289] = [ "Black robe (Wizard's top)", 1, 1, "" ];  //  290
+item [290] = [ "Nature-rune", 1, 1, "Rune" ];  //  (4)
+item [291] = [ "Nothing", 1, 0, "" ];
+item [292] = [ "Nothing", 1, 0, "" ];
+item [293] = [ "Body-rune", 1, 8, "Rune" ];  //  (25)
+item [294] = [ "Coins", 1, 2, "" ];  //  (273)
+item [295] = [ "Mind-rune", 1, 8, "Rune" ];  //  (17)
+item [296] = [ "Nature-rune", 1, 1, "Rune" ];  //  (5)
+item [297] = [ "Nothing", 1, 0, "" ];
+item [298] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (6)
+item [299] = [ "Nothing", 1, 0, "" ];  //  300
+
+runs [1] = [ 299, 300 ];  // kills 130, drops 130
+
+// runs [2] = [ x, y ];  // kills ? ( y - 300 ), drops ? ( x - 299 )
+
+/*
+
+item [000] = [ "Coins", 1, 1, "" ];  //  ()
+item [000] = [ "Coins", 1, 2, "" ];  //  ()
+item [000] = [ "Coins", 1, 4, "" ];  //  ()
+item [000] = [ "Coins", 1, 18, "" ];  //  ()
+item [000] = [ "Coins", 1, 29, "" ];  //  ()
+item [000] = [ "Coins", 1, 30, "" ];  //  ()
+
+item [000] = [ "Air-rune", 1, 3, "Rune" ];  //  ()
+item [000] = [ "Air-rune", 1, 8, "Rune" ];  //  ()
+item [000] = [ "Water-rune", 1, 3, "Rune" ];  //  ()
+item [000] = [ "Water-rune", 1, 8, "Rune" ];  //  ()
+item [000] = [ "Water-rune", 1, 12, "Rune" ];  //  ()
+item [000] = [ "Earth-rune", 1, 3, "Rune" ];  //  ()
+item [000] = [ "Earth-rune", 1, 7, "Rune" ];  //  ()
+item [000] = [ "Earth-rune", 1, 8, "Rune" ];  //  ()
+item [000] = [ "Earth-rune", 1, 24, "Rune" ];  //  ()
+item [000] = [ "Fire-rune", 1, 3, "Rune" ];  //  ()
+item [000] = [ "Fire-rune", 1, 7, "Rune" ];  //  ()
+item [000] = [ "Fire-rune", 1, 8, "Rune" ];  //  ()
+item [000] = [ "Body-rune", 1, 3, "Rune" ];  //  ()
+item [000] = [ "Body-rune", 1, 7, "Rune" ];  //  ()
+item [000] = [ "Body-rune", 1, 8, "Rune" ];  //  ()
+item [000] = [ "Body-rune", 1, 12, "Rune" ];  //  ()
+item [000] = [ "Mind-rune", 1, 3, "Rune" ];  //  ()
+item [000] = [ "Mind-rune", 1, 8, "Rune" ];  //  ()
+item [000] = [ "Chaos-rune", 1, 1, "Rune" ];  //  ()
+item [000] = [ "Chaos-rune", 1, 3, "Rune" ];  //  ()
+item [000] = [ "Nature-rune", 1, 1, "Rune" ];  //  ()
+item [000] = [ "Nature-rune", 1, 3, "Rune" ];  //  ()
+item [000] = [ "Law-rune", 1, 2, "Rune" ];  //  ()
+item [000] = [ "Blood-rune", 1, 1, "Rune" ];  //  ()
+
+item [000] = [ "Staff", 1, 1, "" ];
+item [000] = [ "wizardshat (Black)", 1, 1, "" ];
+item [000] = [ "Black robe (Wizard's top)", 1, 1, "" ];
+
+item [000] = [ "Nothing", 1, 0, "" ];
+
+*/
+
+var idbl = item.length;
+var truns = runs.length;  // total runs
+
+//variables used by the analysis pages
+
+var mname = "Darkwizard";         // monster's name
+var mcbl = 13;                    // monster's combat level
+var mindex = 22;                  // index into monster data base
+var mrpt = 2;                     // number of non-breaking space to add after index name

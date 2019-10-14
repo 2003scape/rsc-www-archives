@@ -1,0 +1,373 @@
+/*
+
+ 0 item name
+ 1 number of items dropped
+ 2 quantity
+ 3 extra info (type, Herb, Rune, Gem)
+ 
+ run
+ 
+ 0 last drop of run (x, index of last drop of run)
+ 1 kills in run (y, kill number of x)
+
+*/
+
+var item = new Array();
+var runs = new Array();
+
+var cwcb = 6;  // column width of checkboxes
+
+var notes = "";
+
+// run 1
+
+item   [0] = [ "Coins", 1, 15, "" ];  //  (15)
+item   [1] = [ "Nature-rune", 1, 1, "Rune" ];  //  (1)
+item   [2] = [ "iron bar", 1, 1, "" ];
+item   [3] = [ "Coins", 1, 8, "" ];  //  (23)
+item   [4] = [ "Nature-rune", 1, 1, "Rune" ];  //  (2)
+item   [5] = [ "Iron battle Axe", 1, 1, "" ];
+item   [6] = [ "Nature-rune", 1, 1, "Rune" ];  //  (3)
+item   [7] = [ "Nothing", 1, 0, "" ];
+item   [8] = [ "Nature-rune", 1, 1, "Rune" ];  //  (4)
+item   [9] = [ "Nature-rune", 1, 1, "Rune" ];  //  (5)
+item  [10] = [ "Harralander", 1, 1, "Herb" ];
+item  [11] = [ "Guam Leaf", 1, 1, "Herb" ];
+item  [12] = [ "Coins", 1, 8, "" ];  //  (31)
+item  [13] = [ "Nature-rune", 1, 1, "Rune" ];  //  (6)
+item  [14] = [ "iron ore", 1, 1, "" ];
+item  [15] = [ "iron bar", 1, 1, "" ];
+item  [16] = [ "Nothing", 1, 0, "" ];
+item  [17] = [ "Nothing", 1, 0, "" ];
+item  [18] = [ "Nothing", 1, 0, "" ];
+item  [19] = [ "Coins", 1, 15, "" ];  //  (46)
+item  [20] = [ "Coins", 1, 8, "" ];  //  (54)
+item  [21] = [ "Nothing", 1, 0, "" ];
+item  [22] = [ "Coins", 1, 8, "" ];  //  (62)
+item  [23] = [ "Marrentill", 1, 1, "Herb" ];
+item  [24] = [ "Coins", 1, 8, "" ];  //  (70)
+item  [25] = [ "Medium Iron Helmet", 1, 1, "" ];
+item  [26] = [ "Tarromin", 1, 1, "Herb" ];
+item  [27] = [ "Nothing", 1, 0, "" ];
+item  [28] = [ "Nothing", 1, 0, "" ];
+item  [29] = [ "Harralander", 1, 1, "Herb" ];
+item  [30] = [ "Law-rune", 1, 1, "Rune" ];  //  (1)
+item  [31] = [ "Nothing", 1, 0, "" ];
+item  [32] = [ "Guam Leaf", 1, 1, "Herb" ];
+item  [33] = [ "Tarromin", 1, 1, "Herb" ];
+item  [34] = [ "Nothing", 1, 0, "" ];
+item  [35] = [ "iron bar", 1, 1, "" ];
+item  [36] = [ "Coins", 1, 15, "" ];  //  (85)
+item  [37] = [ "Avantoe", 1, 1, "Herb" ];
+item  [38] = [ "coal", 1, 1, "" ];
+item  [39] = [ "Nothing", 1, 0, "" ];
+item  [40] = [ "Law-rune", 1, 1, "Rune" ];  //  (2)
+item  [41] = [ "Marrentill", 1, 1, "Herb" ];
+item  [42] = [ "Coins", 1, 15, "" ];  //  (100)
+item  [43] = [ "Nothing", 1, 0, "" ];
+item  [44] = [ "Coins", 1, 8, "" ];  //  (108)
+item  [45] = [ "Nothing", 1, 0, "" ];
+item  [46] = [ "Nature-rune", 1, 1, "Rune" ];  //  (7)
+item  [47] = [ "Guam Leaf", 1, 1, "Herb" ];
+item  [48] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (1)
+item  [49] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (2)
+item  [50] = [ "Coins", 1, 8, "" ];  //  (116)
+item  [51] = [ "Nothing", 1, 0, "" ];
+item  [52] = [ "Nothing", 1, 0, "" ];
+item  [53] = [ "Coins", 1, 8, "" ];  //  (124)
+item  [54] = [ "Guam Leaf", 1, 1, "Herb" ];
+item  [55] = [ "Nothing", 1, 0, "" ];
+item  [56] = [ "iron bar", 1, 1, "" ];
+item  [57] = [ "Nothing", 1, 0, "" ];
+item  [58] = [ "Harralander", 1, 1, "Herb" ];
+item  [59] = [ "Coins", 1, 8, "" ];  //  (132)
+item  [60] = [ "Nothing", 1, 0, "" ];
+item  [61] = [ "Cosmic-rune", 1, 1, "Rune" ];  //  (1)
+item  [62] = [ "Harralander", 1, 1, "Herb" ];
+item  [63] = [ "Nothing", 1, 0, "" ];
+item  [64] = [ "Iron battle Axe", 1, 1, "" ];
+item  [65] = [ "Medium Iron Helmet", 1, 1, "" ];
+item  [66] = [ "Nothing", 1, 0, "" ];
+item  [67] = [ "Nature-rune", 1, 1, "Rune" ];  //  (8)
+item  [68] = [ "iron bar", 1, 1, "" ];
+item  [69] = [ "coal", 1, 1, "" ];
+item  [70] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (3)
+item  [71] = [ "Nothing", 1, 0, "" ];
+item  [72] = [ "Coins", 1, 8, "" ];  //  (140)
+item  [73] = [ "Coins", 1, 15, "" ];  //  (155)
+item  [74] = [ "Nothing", 1, 0, "" ];
+item  [75] = [ "Nothing", 1, 0, "" ];
+item  [76] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (4)
+item  [77] = [ "Cosmic-rune", 1, 1, "Rune" ];  //  (2)
+item  [78] = [ "iron bar", 1, 1, "" ];
+item  [79] = [ "Medium Iron Helmet", 1, 1, "" ];
+item  [80] = [ "Medium Iron Helmet", 1, 1, "" ];
+item  [81] = [ "Guam Leaf", 1, 1, "Herb" ];
+item  [82] = [ "Coins", 1, 15, "" ];  //  (170)
+item  [83] = [ "iron bar", 1, 1, "" ];
+item  [84] = [ "Medium Iron Helmet", 1, 1, "" ];
+item  [85] = [ "iron bar", 1, 1, "" ];
+item  [86] = [ "Nature-rune", 1, 1, "Rune" ];  //  (9)
+item  [87] = [ "iron ore", 1, 1, "" ];
+item  [88] = [ "Marrentill", 1, 1, "Herb" ];
+item  [89] = [ "Nothing", 1, 0, "" ];
+item  [90] = [ "Coins", 1, 8, "" ];  //  (178)
+item  [91] = [ "Nothing", 1, 0, "" ];
+item  [92] = [ "Nature-rune", 1, 1, "Rune" ];  //  (10)
+item  [93] = [ "Cadantine", 1, 1, "Herb" ];
+item  [94] = [ "Nothing", 1, 0, "" ];
+item  [95] = [ "Nature-rune", 1, 1, "Rune" ];  //  (11)
+item  [96] = [ "Nothing", 1, 0, "" ];
+item  [97] = [ "Guam Leaf", 1, 1, "Herb" ];
+item  [98] = [ "Nothing", 1, 0, "" ];
+item  [99] = [ "Harralander", 1, 1, "Herb" ];
+item [100] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (5)
+item [101] = [ "iron ore", 1, 1, "" ];
+item [102] = [ "Nothing", 1, 0, "" ];
+item [103] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (6)
+item [104] = [ "Iron battle Axe", 1, 1, "" ];
+item [105] = [ "Irit Leaf", 1, 1, "Herb" ];
+item [106] = [ "Coins", 1, 15, "" ];  //  (193)
+item [107] = [ "Coins", 1, 8, "" ];  //  (201)
+item [108] = [ "coal", 1, 1, "" ];
+item [109] = [ "Nothing", 1, 0, "" ];
+item [110] = [ "Nature-rune", 1, 1, "Rune" ];  //  (12)
+item [111] = [ "Nothing", 1, 0, "" ];
+item [112] = [ "Nature-rune", 1, 1, "Rune" ];  //  (13)
+item [113] = [ "Nothing", 1, 0, "" ];
+item [114] = [ "Medium Iron Helmet", 1, 1, "" ];
+item [115] = [ "Nature-rune", 1, 1, "Rune" ];  //  (14)
+item [116] = [ "Nothing", 1, 0, "" ];
+item [117] = [ "Nothing", 1, 0, "" ];
+item [118] = [ "Coins", 1, 8, "" ];  //  (209)
+item [119] = [ "Nothing", 1, 0, "" ];
+item [120] = [ "Nothing", 1, 0, "" ];
+item [121] = [ "Coins", 1, 8, "" ];  //  (217)
+item [122] = [ "Coins", 1, 30, "" ];  //  (247)
+item [123] = [ "Kwuarm", 1, 1, "Herb" ];
+item [124] = [ "coal", 1, 1, "" ];
+item [125] = [ "Death-rune", 1, 1, "Rune" ];  //  (1)
+item [126] = [ "Nothing", 1, 0, "" ];
+item [127] = [ "Kwuarm", 1, 1, "Herb" ];
+item [128] = [ "Nothing", 1, 0, "" ];
+item [129] = [ "Coins", 1, 15, "" ];  //  (262)
+item [130] = [ "Coins", 1, 8, "" ];  //  (270)
+item [131] = [ "Coins", 1, 8, "" ];  //  (278)
+item [132] = [ "Coins", 1, 8, "" ];  //  (286)
+item [133] = [ "Guam Leaf", 1, 1, "Herb" ];
+item [134] = [ "Coins", 1, 8, "" ];  //  (294)
+item [135] = [ "Coins", 1, 8, "" ];  //  (302)
+item [136] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (7)
+item [137] = [ "Coins", 1, 8, "" ];  //  (310)
+item [138] = [ "Nature-rune", 1, 1, "Rune" ];  //  (15)
+item [139] = [ "Coins", 1, 8, "" ];  //  (318)
+item [140] = [ "coal", 1, 1, "" ];
+item [141] = [ "Coins", 1, 8, "" ];  //  (326)
+item [142] = [ "Nature-rune", 1, 1, "Rune" ];  //  (16)
+item [143] = [ "Coins", 1, 15, "" ];  //  (341)
+item [144] = [ "Nothing", 1, 0, "" ];
+item [145] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (8)
+item [146] = [ "Kwuarm", 1, 1, "Herb" ];
+item [147] = [ "Coins", 1, 8, "" ];  //  (349)
+item [148] = [ "Nature-rune", 1, 1, "Rune" ];  //  (17)
+item [149] = [ "Coins", 1, 15, "" ];  //  (364)
+item [150] = [ "Marrentill", 1, 1, "Herb" ];
+item [151] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (9)
+item [152] = [ "Nothing", 1, 0, "" ];
+item [153] = [ "Coins", 1, 8, "" ];  //  (372)
+item [154] = [ "Nothing", 1, 0, "" ];
+item [155] = [ "Irit Leaf", 1, 1, "Herb" ];
+item [156] = [ "Nothing", 1, 0, "" ];
+item [157] = [ "Nothing", 1, 0, "" ];
+item [158] = [ "Death-rune", 1, 1, "Rune" ];  //  (2)
+item [159] = [ "Nature-rune", 1, 1, "Rune" ];  //  (18)
+item [160] = [ "Coins", 1, 15, "" ];  //  (387)
+item [161] = [ "Coins", 1, 8, "" ];  //  (395)
+item [162] = [ "Coins", 1, 8, "" ];  //  (403)
+item [163] = [ "Irit Leaf", 1, 1, "Herb" ];
+item [164] = [ "Coins", 1, 8, "" ];  //  (411)
+item [165] = [ "Harralander", 1, 1, "Herb" ];
+item [166] = [ "Nothing", 1, 0, "" ];
+item [167] = [ "Nothing", 1, 0, "" ];
+item [168] = [ "Nothing", 1, 0, "" ];
+item [169] = [ "Coins", 1, 8, "" ];  //  (419)
+item [170] = [ "Irit Leaf", 1, 1, "Herb" ];
+item [171] = [ "Avantoe", 1, 1, "Herb" ];
+item [172] = [ "Avantoe", 1, 1, "Herb" ];
+item [173] = [ "Nature-rune", 1, 1, "Rune" ];  //  (19)
+item [174] = [ "Coins", 1, 15, "" ];  //  (434)
+item [175] = [ "Nothing", 1, 0, "" ];
+item [176] = [ "Coins", 1, 8, "" ];  //  (442)
+item [177] = [ "Harralander", 1, 1, "Herb" ];
+item [178] = [ "Nothing", 1, 0, "" ];
+item [179] = [ "Nothing", 1, 0, "" ];
+item [180] = [ "Iron battle Axe", 1, 1, "" ];
+item [181] = [ "Nothing", 1, 0, "" ];
+item [182] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (10)
+item [183] = [ "Coins", 1, 15, "" ];  //  (457)
+item [184] = [ "Coins", 1, 8, "" ];  //  (465)
+item [185] = [ "Iron battle Axe", 1, 1, "" ];
+item [186] = [ "Medium Iron Helmet", 1, 1, "" ];
+item [187] = [ "Cadantine", 1, 1, "Herb" ];
+item [188] = [ "iron bar", 1, 1, "" ];
+item [189] = [ "Coins", 1, 8, "" ];  //  (473)
+item [190] = [ "Nature-rune", 1, 1, "Rune" ];  //  (20)
+item [191] = [ "Nothing", 1, 0, "" ];
+item [192] = [ "Marrentill", 1, 1, "Herb" ];
+item [193] = [ "Coins", 1, 15, "" ];  //  (488)
+item [194] = [ "Irit Leaf", 1, 1, "Herb" ];
+item [195] = [ "Nothing", 1, 0, "" ];
+item [196] = [ "Ranarr Weed", 1, 1, "Herb" ];
+item [197] = [ "Nothing", 1, 0, "" ];
+item [198] = [ "Coins", 1, 15, "" ];  //  (503)
+item [199] = [ "Nature-rune", 1, 1, "Rune" ];  //  (21)
+item [200] = [ "Nothing", 1, 0, "" ];
+item [201] = [ "Harralander", 1, 1, "Herb" ];
+item [202] = [ "Nothing", 1, 0, "" ];
+item [203] = [ "Nature-rune", 1, 1, "Rune" ];  //  (22)
+item [204] = [ "Coins", 1, 8, "" ];  //  (511)
+item [205] = [ "Nothing", 1, 0, "" ];
+item [206] = [ "Nothing", 1, 0, "" ];
+item [207] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (11)
+item [208] = [ "Coins", 1, 8, "" ];  //  (519)
+item [209] = [ "Nothing", 1, 0, "" ];
+item [210] = [ "iron bar", 1, 1, "" ];
+item [211] = [ "Nothing", 1, 0, "" ];
+item [212] = [ "Coins", 1, 8, "" ];  //  (527)
+item [213] = [ "Coins", 1, 8, "" ];  //  (535)
+item [214] = [ "Nothing", 1, 0, "" ];
+item [215] = [ "Nature-rune", 1, 1, "Rune" ];  //  (23)
+item [216] = [ "Nothing", 1, 0, "" ];
+item [217] = [ "Marrentill", 1, 1, "Herb" ];
+item [218] = [ "Coins", 1, 15, "" ];  //  (550)
+item [219] = [ "Nothing", 1, 0, "" ];
+item [220] = [ "Nothing", 1, 0, "" ];
+item [221] = [ "Coins", 1, 8, "" ];  //  (558)
+item [222] = [ "Guam Leaf", 1, 1, "Herb" ];
+item [223] = [ "Nothing", 1, 0, "" ];
+item [224] = [ "Cosmic-rune", 1, 1, "Rune" ];  //  (3)
+item [225] = [ "Coins", 1, 8, "" ];  //  (566)
+item [226] = [ "Coins", 1, 8, "" ];  //  (574)
+item [227] = [ "Marrentill", 1, 1, "Herb" ];
+item [228] = [ "Nature-rune", 1, 1, "Rune" ];  //  (24)
+item [229] = [ "Steel Axe", 1, 1, "" ];
+item [230] = [ "Kwuarm", 1, 1, "Herb" ];
+item [231] = [ "Coins", 1, 15, "" ];  //  (589)
+item [232] = [ "Nature-rune", 1, 1, "Rune" ];  //  (25)
+item [233] = [ "Medium Iron Helmet", 1, 1, "" ];
+item [234] = [ "iron bar", 1, 1, "" ];
+item [235] = [ "Nothing", 1, 0, "" ];
+item [236] = [ "Nothing", 1, 0, "" ];
+item [237] = [ "Tarromin", 1, 1, "Herb" ];
+item [238] = [ "iron bar", 1, 1, "" ];
+item [239] = [ "Steel Axe", 1, 1, "" ];
+item [240] = [ "Coins", 1, 8, "" ];  //  (597)
+item [241] = [ "Death-rune", 1, 1, "Rune" ];  //  (3)
+item [242] = [ "Nothing", 1, 0, "" ];
+item [243] = [ "Guam Leaf", 1, 1, "Herb" ];
+item [244] = [ "Coins", 1, 8, "" ];  //  (605)
+item [245] = [ "Nothing", 1, 0, "" ];
+item [246] = [ "Nothing", 1, 0, "" ];
+item [247] = [ "Coins", 1, 30, "" ];  //  (635)
+item [248] = [ "Nothing", 1, 0, "" ];
+item [249] = [ "Coins", 1, 8, "" ];  //  (643)
+item [250] = [ "Nature-rune", 1, 1, "Rune" ];  //  (26)
+item [251] = [ "Coins", 1, 8, "" ];  //  (651)
+item [252] = [ "Tarromin", 1, 1, "Herb" ];
+item [253] = [ "Nature-rune", 1, 1, "Rune" ];  //  (27)
+item [254] = [ "Coins", 1, 8, "" ];  //  (659)
+item [255] = [ "Coins", 1, 15, "" ];  //  (674)
+item [256] = [ "Death-rune", 1, 1, "Rune" ];  //  (4)
+item [257] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (12)
+item [258] = [ "Coins", 1, 15, "" ];  //  (689)
+item [259] = [ "Coins", 1, 8, "" ];  //  (697)
+item [260] = [ "Steel Axe", 1, 1, "" ];
+item [261] = [ "Coins", 1, 8, "" ];  //  (705)
+item [262] = [ "Steel Axe", 1, 1, "" ];
+item [263] = [ "Tarromin", 1, 1, "Herb" ];
+item [264] = [ "Ranarr Weed", 1, 1, "Herb" ];
+item [265] = [ "Guam Leaf", 1, 1, "Herb" ];
+item [266] = [ "Nothing", 1, 0, "" ];
+item [267] = [ "Nature-rune", 1, 1, "Rune" ];  //  (28)
+item [268] = [ "Nothing", 1, 0, "" ];
+item [269] = [ "iron bar", 1, 1, "" ];
+item [270] = [ "iron ore", 1, 1, "" ];
+item [271] = [ "iron ore", 1, 1, "" ];
+item [272] = [ "Tarromin", 1, 1, "Herb" ];
+item [273] = [ "Coins", 1, 30, "" ];  //  (735)
+item [274] = [ "iron ore", 1, 1, "" ];
+item [275] = [ "Medium Iron Helmet", 1, 1, "" ];
+item [276] = [ "Coins", 1, 8, "" ];  //  (743)
+item [277] = [ "Kwuarm", 1, 1, "Herb" ];
+item [278] = [ "Nothing", 1, 0, "" ];
+item [279] = [ "Guam Leaf", 1, 1, "Herb" ];
+item [280] = [ "Coins", 1, 15, "" ];  //  (758)
+item [281] = [ "coal", 1, 1, "" ];
+item [282] = [ "Marrentill", 1, 1, "Herb" ];
+item [283] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (13)
+item [284] = [ "Ranarr Weed", 1, 1, "Herb" ];
+item [285] = [ "Chaos-rune", 1, 1, "Rune" ];  //  (14)
+item [286] = [ "Nothing", 1, 0, "" ];
+item [287] = [ "Nothing", 1, 0, "" ];
+item [288] = [ "Tarromin", 1, 1, "Herb" ];
+item [289] = [ "Coins", 1, 15, "" ];  //  (773)
+item [290] = [ "Coins", 1, 8, "" ];  //  (781)
+item [291] = [ "Coins", 1, 15, "" ];  //  (796)
+item [292] = [ "Nothing", 1, 0, "" ];
+item [293] = [ "Nothing", 1, 0, "" ];
+item [294] = [ "Coins", 1, 15, "" ];  //  (811)
+item [295] = [ "Marrentill", 1, 1, "Herb" ];
+item [296] = [ "Coins", 1, 8, "" ];  //  (819)
+item [297] = [ "Coins", 1, 8, "" ];  //  (827)
+item [298] = [ "Coins", 1, 8, "" ];  //  (835)
+item [299] = [ "Coins", 1, 8, "" ];  //  (843)
+
+runs [0] = [ 299, 300 ];  // kills 300, drops 300
+
+// runs [1] = [ x, y ];  // kills ? ( y - 300 ), drops ? ( x - 299 )
+
+/*
+
+item [000] = [ "Coins", 1, 8, "" ];  //  ()
+item [000] = [ "Coins", 1, 15, "" ];  //  ()
+item [000] = [ "Coins", 1, 30, "" ];  //  ()
+
+item [000] = [ "Guam Leaf", 1, 1, "Herb" ];
+item [000] = [ "Marrentill", 1, 1, "Herb" ];
+item [000] = [ "Tarromin", 1, 1, "Herb" ];
+item [000] = [ "Harralander", 1, 1, "Herb" ];
+item [000] = [ "Ranarr Weed", 1, 1, "Herb" ];
+item [000] = [ "Irit Leaf", 1, 1, "Herb" ];
+item [000] = [ "Avantoe", 1, 1, "Herb" ];
+item [000] = [ "Kwuarm", 1, 1, "Herb" ];
+item [000] = [ "Cadantine", 1, 1, "Herb" ];
+item [000] = [ "Dwarf Weed", 1, 1, "Herb" ];
+
+item [000] = [ "Chaos-rune", 1, 1, "Rune" ];  //  ()
+item [000] = [ "Cosmic-rune", 1, 1, "Rune" ];  //  ()
+item [000] = [ "Nature-rune", 1, 1, "Rune" ];  //  ()
+item [000] = [ "Law-rune", 1, 1, "Rune" ];  //  ()
+item [000] = [ "Death-rune", 1, 1, "Rune" ];  //  ()
+
+item [000] = [ "coal", 1, 1, "" ];
+item [000] = [ "iron ore", 1, 1, "" ];
+item [000] = [ "iron bar", 1, 1, "" ];
+
+item [000] = [ "Iron battle Axe", 1, 1, "" ];
+item [000] = [ "Steel Axe", 1, 1, "" ];
+
+item [000] = [ "Medium Iron Helmet", 1, 1, "" ];
+
+item [000] = [ "Nothing", 1, 0, "" ];
+
+*/
+
+var idbl = item.length;
+var truns = runs.length;  // total runs
+
+//variables used by the analysis pages
+
+var mname = "Thug";             // monster's name
+var mcbl = 18;                  // monster's combat level
+var mindex = 34;                // index into monster data base
+var mrpt = 2;                   // number of non-breaking space to add after index name
