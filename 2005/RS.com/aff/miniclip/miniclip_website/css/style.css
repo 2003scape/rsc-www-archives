@@ -1,0 +1,59 @@
+.TextBoxHomepage {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	width: 130px;
+}
+
+.TextBoxJoinUs {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	width: 140px;
+}
+
+.DropDown {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	width: 156px;
+	margin-bottom: 0px;
+}
+
+table {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+a {
+	color: #333366;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:active { color: #336699; }
+a:visited { color: #333366; }
+a:hover { color: #336699; text-decoration: none}
+.highlight {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF9900;
+}
+.codeGrey {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+}
+.codeRed {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CC0000;
+	font-weight: bold;
+}
+.contentWhite {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}

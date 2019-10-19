@@ -1,0 +1,146 @@
+body {
+    background: none repeat-y scroll center top black;
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    margin: 0 auto;
+    text-align: center;
+}
+#content {
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 910px;
+}
+#container {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+
+    margin: 0 auto;
+    width: 920px;
+}
+#innerContainer {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    vertical-align: middle;
+	margin-top: 10px;
+}
+.e {
+border:2px solid #382418;
+font-size:14px;
+font-family: Arial,Helvetica,sans-serif;
+}
+a.c:hover {
+text-decoration:underline;
+}
+a {
+    color: #90C040;
+    text-decoration: none;
+}
+.high {
+    left: 0;
+}
+.choose_detail {
+ position: absolute;
+
+
+ top: 154px;
+
+ width: 261px;
+ height: 134px; 
+}
+
+@media all { 
+IE\:clientCaps {
+behavior:url(#default#clientcaps)
+} 
+}
+iframe.detail_advert{
+    left: 3px;
+    position: relative;
+    top: 300px;
+}
+.low {
+    right: 0;
+}
+.titleFrame {
+    background-color: #000000;
+    width: 450px;
+	left: 710px;
+	margin: 0 auto;
+	top: 40px;
+}
+#copyright{
+    clear: both;
+text-align:center;
+	margin-top:110px;
+}
+.innerFrame {
+    border: 2px solid #382418;
+    padding: 4px;
+}
+.detail_select {
+  width: 522px;
+  height: 668px;
+  background: url("../img/playgame/detailwithad.gif");
+
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+}
+div#plugin_box {    
+ position: absolute;
+ text-align: center;
+ left: 36px;
+
+
+ top: 595px;
+ 
+ width: 450px;
+ color: white;
+ font-weight: bold;
+}
+#top {  
+margin-top: 1px;
+background:url('../img/tops/top.jpg') no-repeat scroll center top transparent;
+width:600px;
+height:42px;
+}
+
+#background {
+    background: url("../img/backgrounds/bg.jpg") repeat-y scroll center top transparent;
+}
+#footer {
+    background: url("../img/footers/footer.jpg") no-repeat scroll center top;
+    font-size: 11px;
+    height:79px;
+	width:600px;
+	margin-bottom:20px;
+    text-align: center;
+}
+select#plugin {
+ margin-top: 2px;
+ background-color: #B1977E;
+}
+div, td {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

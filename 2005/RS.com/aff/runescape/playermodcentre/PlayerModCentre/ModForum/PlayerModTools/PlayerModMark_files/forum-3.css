@@ -1,0 +1,19 @@
+INPUT {
+	background-color: black;
+	color: white;
+	border-color: #444;
+}
+
+SELECT {
+	background-color: white;
+	color:black;
+}
+
+TEXTAREA { 
+	background-color: white;
+	color:black;
+}
+
+INPUT,SELECT {
+	font-size: x-small;
+}

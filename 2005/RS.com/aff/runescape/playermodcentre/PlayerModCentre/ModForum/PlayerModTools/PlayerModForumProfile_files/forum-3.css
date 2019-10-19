@@ -1,0 +1,386 @@
+INPUT,SELECT,TEXTAREA {
+	background-color: black;
+	color: white;
+	border-color: #444;
+}
+
+INPUT,SELECT {
+	font-size: x-small;
+}
+
+#uid {
+	background-color: black;
+	color: white;
+	border: 2px inset #444;
+	border-color: #f5f5f5;
+	text-align: center;
+	width: 33px;
+}
+
+#picker {
+	float: right;
+	min-width: 300px;
+	margin-top: -20px;
+	color: #888;
+}
+
+.codeButton {
+	background-color: black;
+	color: white;
+	font-size: medium;
+	border: 2px outset #444;
+	padding: 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.bk {
+	display: none;
+}
+
+.tandc {
+	margin-top: 20px;
+}
+
+.white {
+	color: white;
+}
+
+.highlight {
+	color: #ffbb22;
+	margin-top: 20px;
+}
+
+.inactive {
+	color: #999;
+}
+
+.sticky1,TD.unread {
+	font-weight: bold;
+}
+
+.num,.center {
+	text-align: center;
+}
+
+.num {
+	width: 10%;
+}
+
+.bigtitle {
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.thrd {
+	white-space: nowrap;
+	width: 100%;
+}
+
+#breadcrumb,.title,#commandtitle {
+	color: white;
+	font-weight: bold;
+}
+
+UL.flat {
+	list-style-type: none;
+	margin: 2px;
+	padding: 0;
+}
+
+UL.flat LI {
+	display: inline;
+	padding: 0 4px;
+	margin: 0;
+}
+
+.actions INPUT,.actions SELECT {
+	background-color: #222;
+	border: 1px solid #444;
+	text-align: center;
+}
+
+#infopane {
+	padding-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+#infopane .title,#infotitle {
+	font-size: 18pt;
+	margin: 0 20px 0 5px;
+}
+
+#infotitle {
+	margin: 40px 10%;
+}
+
+.attention {
+	text-align: center;
+	color: white;
+	background-color: #a00;
+	margin: 10px 0 0 0;
+	padding: 2px;
+	width: 100%;
+}
+
+.goodattention {
+	text-align: center;
+	color: white;
+	background-color: #060;
+	margin: 10px 0 0 0;
+	padding: 2px;
+	width: 100%;
+}
+
+.actions .commands {
+	text-align: right;
+}
+
+.nav,.nav INPUT {
+	font-size: 8pt;
+}
+
+#nocontrols {
+	height: 24px;
+	padding: 1px;
+	margin-top: 10px;
+}
+
+#controls,.actions,#commandtitle,#info,#content {
+	position: relative;
+	background-color: black;
+}
+
+#commandtitle {
+	margin-top: 60px;
+	text-align: center;
+	font-size: 16pt;
+	font-weight: bold;
+	padding: 2px 0;
+}
+
+#controls {
+	padding: 1px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#controls,.actions,.border,#commandtitle,#info {
+	border: 2px solid #382418;
+}
+
+#info {
+	width: 80%;
+	margin: 50px 10% 0 10%;
+	padding: 5px;
+}
+
+#breadcrumb {
+	margin-top: 15px;
+}
+
+#command {
+	text-align: center;
+	margin-left: 15%;
+	width: 70%;
+}
+
+#command .commandtitle {
+	text-align: right;
+	width: 40%;
+}
+
+#command .commandinput {
+	font-size: 10px;
+}
+
+#menu {
+	margin: 20px 0;
+	text-align: center;
+}
+
+#command .commandtwo {
+	text-align: center;
+}
+
+#contentfrm .groupname {
+	border: 2px solid #382418;
+	border-bottom: 0;
+	background-color: #1c1610;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px 0 5px 5px;
+}
+
+#contentfrm .item {
+	background-color: #000;
+}
+
+#contentfrm .icon,#content .threadmarks {
+	width: 25px;
+	text-align: center;
+	padding-right: 5px;
+}
+
+#contentfrm .frmname {
+	width: 50%;
+}
+
+#top {
+	margin-top: 2px;
+	padding: 2px;
+}
+
+#contentfrm,#content,#becontrol,#contentmsg {
+	padding: 2px;
+	margin-top: 20px;
+}
+
+#bottom {
+	margin-top: 5px;
+	padding: 2px;
+}
+
+#contentfrm .lefttd {
+	border-left: 2px solid #382418;
+}
+
+#contentfrm .righttd {
+	border-right: 2px solid #382418;
+}
+
+#contentfrm .groupend {
+	border-top: 2px solid #382418;
+	margin-bottom: 10px;
+}
+
+#contentfrm .item,#content.item {
+	border-top: 1px solid #382418;
+}
+
+#content .updated,#contentfrm.updated {
+	width: 22%;
+}
+
+#content .update2 {
+	width: 25%;
+}
+
+#content .spacerm #contentmsg .spacerm,#contentfrm.spacerm {
+	height: 5px;
+}
+
+#content .sticky {
+	font-weight: bold;
+}
+
+.modcentreitem DIV.l {
+	text-align: center;
+	margin: 6px;
+	padding: 3px;
+	background-color: black;
+	border: 2px solid #313131;
+}
+
+.modcentreitem IMG {
+	padding: 0px 5px;
+}
+
+.modcentreitem .title {
+	padding-bottom: 5px;
+}
+
+#becontrol TD.list,#becontrol TD.viewdetails,.extra {
+	border: 2px solid #313131;
+	padding: 2px;
+	background-color: black;
+}
+
+#becontrol TD.list {
+	width: 25%;
+}
+
+#becontrol TD.viewdetails {
+	padding-left: 10%;
+	width: 60%;
+}
+
+#becontrol .priv {
+	text-align: right;
+	margin-right: 32%;
+}
+
+.extra,TD.viewdetails {
+	margin-top: 20px;
+}
+
+.extra {
+	text-align: center;
+}
+
+#history,.listof {
+	text-align: left;
+}
+
+#history {
+	margin-top: 20px;
+	margin-left: 1%;
+	width: 98%;
+}
+
+.searchresult {
+	padding: 2px;
+}
+
+.msgplace {
+	margin-top: -50px;
+}
+
+#smileylegend {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#smileylegend SPAN {
+	cursor: pointer;
+}
+
+.thdhid {
+	background-color: #270909;
+}
+
+.thdnrml {
+	background-color: #191919;
+}
+
+.note,.noteb,.notet {
+	border: 2px solid #313131;
+	padding: 2px 0px 5px 0px;
+	background: black;
+}
+
+.noteb {
+	border-top: 0px;
+}
+
+.notet {
+	border-bottom: 0px;
+}
+
+.notehidden {
+	background-color: #270909;
+}
+
+.stats_value {
+	display: inline-block;
+	background: #33190d;
+	color: #FFFFFF;
+	padding: 2px 6px;
+	font-weight: bold;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	margin-right: 3px
+}

@@ -1,0 +1,85 @@
+html, body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    margin: 0;
+    min-width: 800px;
+}
+#top {  
+margin-top: 1px;
+background:url('../img/tops/top.jpg') no-repeat scroll center top transparent;
+width:600px;
+height:42px;
+}
+.b {
+border-style: outset; 
+border-width:3pt; 
+border-color:#373737;
+}
+
+TD {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.mainscroll-content {
+    color: #00000;
+height: 625px;
+    margin: 0 5px;
+font-size: 14px;
+    position: relative;
+}
+.orange {
+	color: #ffbb22;
+
+}
+a:hover, .button  {
+    text-decoration: none;
+}
+.bold {
+	font-weight: bold;
+}
+a.c:hover {
+text-decoration:underline;
+}
+a.orange:hover {
+text-decoration:underline;
+}
+.titleframe{
+	line-height: 5px;
+    margin-left: auto;
+    margin-top: 23px;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    width: 470px;
+	height: 600px;
+}
+
+#players {
+position:relative;
+text-align:right;
+}
+
+.e {
+border:2px solid #382418;
+font-size:14px;
+font-family: Arial,Helvetica,sans-serif;
+}
+#footer {
+    background: url("../img/footers/footer.jpg") no-repeat scroll center top;
+    font-size: 11px;
+    height:79px;
+	width:600px;
+	margin-bottom:20px;
+    text-align: center;
+}
+#background {
+background: url('../img/backgrounds/bg.jpg') repeat-y scroll center top transparent;
+}
+
+
+a {
+    color: #90C040;
+    text-decoration: none;
+}

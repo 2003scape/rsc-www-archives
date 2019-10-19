@@ -1,0 +1,75 @@
+body {
+	font-family: Arial,Helvetica,sans-serif; font-size: 13px;
+}
+td {
+	font-family: Arial,Helvetica,sans-serif; font-size: 13px;
+}
+p {
+	font-family: Arial,Helvetica,sans-serif; font-size: 13px;
+}
+.b {
+	border: 3pt outset rgb(55, 55, 55);
+}
+.b2 {
+	border: 3pt outset rgb(87, 7, 0);
+}
+.e {
+	border: 2px solid rgb(56, 36, 24);
+}
+.c {
+	text-decoration: none;
+}
+a.c:hover {
+	text-decoration: underline;
+}
+.white {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.red {
+	color: rgb(225, 5, 5); text-decoration: none;
+}
+.lblue {
+	color: rgb(157, 184, 195); text-decoration: none;
+}
+.dblue {
+	color: rgb(13, 96, 131); text-decoration: none;
+}
+.yellow {
+	color: rgb(255, 225, 57); text-decoration: none;
+}
+.green {
+	color: rgb(4, 168, 0); text-decoration: none;
+}
+.purple {
+	color: rgb(197, 3, 253); text-decoration: none;
+}
+.pink {
+	color: rgb(250, 168, 170); text-decoration: none;
+}
+a.c:hover {
+	text-decoration: underline;
+}
+a.white:hover {
+	text-decoration: underline;
+}
+a.red:hover {
+	text-decoration: underline;
+}
+a.lblue:hover {
+	text-decoration: underline;
+}
+a.dblue:hover {
+	text-decoration: underline;
+}
+a.yellow:hover {
+	text-decoration: underline;
+}
+a.green:hover {
+	text-decoration: underline;
+}
+a.purple:hover {
+	text-decoration: underline;
+}
+a.pink:hover {
+	text-decoration: underline;
+}

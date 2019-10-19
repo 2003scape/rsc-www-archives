@@ -1,0 +1,63 @@
+#alignleft {
+  float: left;
+  width:33.333333%;
+  text-align:left;
+}
+
+#aligncenter {
+  float: center;
+  width:33.33333%;
+  text-align:center;
+}
+
+#alignright {
+ float: right;
+ width: 50px;
+ text-align:right;
+
+}
+
+INPUT {
+	font-size: 12px;
+}
+
+
+#button {
+	text-align:center;
+	width: 140px;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+#submit {
+	background-color: black;
+	color: white;
+	border: 2px outset #444;
+}
+
+
+#textbox {
+	width: 250px;
+
+}
+
+#textbox2 {
+	width: 150px;
+}
+
+#textbox3 {
+	width: 250px;
+}
+
+
+#uid {
+	text-align: center;
+	color: #888;
+	margin-top: 20px;
+}
+
+#form { 
+display:inline;
+vertical-align:top;
+
+}

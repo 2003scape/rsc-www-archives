@@ -1,0 +1,14 @@
+INPUT,SELECT,TEXTAREA {
+	background-color: white;
+	color: black;
+	border-color: #444;
+	border: 1px outset;
+}
+
+INPUT,SELECT {
+	font-size: x-small;
+}
+
+.pagealign {
+	height: 625px;
+}

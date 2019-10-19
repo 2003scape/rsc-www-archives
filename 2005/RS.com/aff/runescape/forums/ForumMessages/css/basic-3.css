@@ -1,0 +1,85 @@
+body { background: black; color: white; font-family:Arial,Helvetica,sans-serif; font-size: 13px;
+  background-image:url('/img/bg2.jpg'); background-position:top center; background-repeat:repeat-y; text-align: center; margin: 0; }
+  
+#report_back{
+margin:3px;
+background-color:#382418;
+border:1px solid yellow;
+}
+
+#mod_controls{
+    text-align:center;
+    padding:6px;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    border: 2px solid #382418; background-color: black;
+}
+
+.donor_only {
+    border:1px dotted white;
+    margin-top:2px;
+    margin-bottom:2px;
+    padding:3px;
+}
+
+#mod_controls form{
+    margin:0px;
+    padding:0px;
+    display:inline;
+}
+
+#mod_controls form.submit{
+    background-color:grey;
+    border:1px solid black;
+}
+
+#report_back tr{
+margin:2px;
+}
+  
+#admin_crown_bg {
+    margin-top: 2px;
+	background:url(../img/title2/icon_crown_gold.gif) no-repeat;
+	align:left;
+}
+.admin_crown_text {
+	margin: 2px, 0, 0, 0;
+	padding: 0, 0, 0, 0;
+}
+
+div#body {width: 765px; margin: 10px auto 10px auto; text-align: left; position: relative;}
+
+div,td { font-family:Arial,Helvetica,sans-serif; font-size: 13px; }
+a:hover { text-decoration: underline; }
+img { border: 0; }
+img a:hover {text-decoration:none;}
+.titleframe { width: 500px; margin-left: auto; margin-right: auto; padding: 4px; text-align: center; }
+.frame { width: 753px; margin-left: auto; margin-right: auto; padding: 4px; }
+.tandc { clear: both; font-size:11px; text-align:center; }
+.scroll { color: black; }
+.heading { text-align:center;margin: 6px; }
+.heading span {width: 125px; margin: 0 auto; display: block; background-image:url(../img/smbrownback.jpg); border: 3px solid #3E3B23; border-top: 3px solid #7C774A; border-left: 3px solid #7C774A; background-color: #4D422E; padding: 3px 10px 3px 10px; }
+
+  a { color: #90c040; text-decoration: none; }
+  .scroll a { color: #7B4F17; font-weight: bold; }
+  .e {border:2px solid #382418; background-color: black; }
+  
+  
+    .wide_e { border: 2px solid #382418; background-color: black; }
+  
+#black_fields .button, #black_fields .input{ background-color:black; color:white; border:1px solid #3E3B23; }
+div.horizontalscroll { width: 765px; height: 159px; overflow: hidden; margin: 5px 0; background-color: #C2AB79; background-image: url("../img/scroll/horizontal_scroll.gif"); position: relative;}
+div.horizontalscroll-content { margin: 15px 40px; color: #000000; position: relative;}
+div.widescroll { width: 735px; background-color: #C2AB79; margin: 0 10px 0 15px; position: relative;}
+div.widescroll-bgimg { width: 745px; position: relative; margin: 0 -5px; background-image: url("../img/scroll/backdrop_745.gif"); background-repeat: repeat-y;}
+div.widescroll-content { padding: 25px 10px; color: #000000; position: relative; margin: 0 5px;}
+img.widescroll-top { position: relative; top: 25px; padding:0; margin: 0; z-index: 100; display: block;}
+img.widescroll-bottom { position: relative; padding:0; margin: 0; top: -25px; display: block;}
+div.widescroll-content a, div.horizontalscroll-content a, div.narrowscroll-content a {color: #7B4F17; font-weight: bold; }
+div.narrowscroll-bgimg { width: 457px; position: relative; margin: 0 -5px; background-image: url("../img/scroll/scroll457t.gif"); background-repeat: repeat-y;}
+div.narrowscroll-bg { width: 447px; background-color: #C2AB79; margin-left: 10px; }
+div.narrowscroll-content { padding: 25px 10px; color: #000000; position: relative; margin: 0 5px;}
+div.narrowscroll-content td { color: black; }
+img.narrowscroll-top { position: relative; top: 25px; padding:0; margin: 0; z-index: 100; display: block;}
+img.narrowscroll-bottom { position: relative; padding:0; margin: 0; top: -25px; display: block;}

@@ -1,0 +1,268 @@
+html, body{
+	font-family: Arial,Helvetica,sans-serif;
+    background-color: black;
+    color: #FFFFFF;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+frameset, frame {
+    border: 0 none;
+}
+noframes table {
+    height: 100%;
+    width: 100%;
+}
+noframes table td {
+    text-align: center;
+}
+img {
+    border: 0 none;
+}
+#logo {
+    display: block;
+    height: 63px;
+    width: 130px;
+}
+#nav {
+    margin: 0;
+    padding: 0;
+}
+#nav li {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.e {
+	BORDER-RIGHT: #382418 2px solid; BORDER-TOP: #382418 2px solid; BORDER-LEFT: #382418 2px solid; BORDER-BOTTOM: #382418 2px solid
+}
+}
+.nextPage {
+    background: url("../img/manual/nextpage.gif") no-repeat scroll center top transparent;
+}
+.nextPage, .prevPage {
+    display: block;
+    height: 35px;
+    margin: 2px;
+    width: 74px;
+}
+.prevPage {
+    background: url("../img/manual/prevpage.gif") ;
+}
+.pageButton {
+    background: url("../img/title/stoneback.gif") ;
+    border: 4px outset #373737;
+}
+#nav a {
+    background-color: #0F3219;
+    border-left: 1px solid #030C06;
+    color: #F5F5F5;
+    display: block;
+    font-size: 16px;
+    height: 63px;
+    line-height: 63px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+}
+#nav a:hover {
+    background-color: #154723;
+}
+#newsNav {
+    margin-top: 5px;
+    text-align: center;
+}
+a.all_categories, .all_categories {
+    color: #FFFFFF;
+}
+a.runescape_updates  {
+    color: #E10505;
+}
+.runescape_updates2 {
+font-size:14px;
+color: #E10505;
+}
+a.website {
+    color: #9DB8C3;
+}
+.website2 {
+font-size:14px;
+    color: #9DB8C3;
+	}
+a.technical, .technical {
+    color: #0D6083;
+}
+a.customer_support, .customer_support {
+    color: #FFE139;
+}
+a.community, .community {
+    color: #04A800;
+}
+a.behind_the_scenes, .behind_the_scenes {
+    color: #C503FD;
+}
+a.feedback, .feedback {
+    color: #FAA8AA;
+}
+a{
+font-size:13px;
+    color: #90C040;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    border: medium none;
+}
+#container {
+    height: 100%;
+    margin: 0 auto;
+    width: 605px;
+}
+#innerContainer {
+    vertical-align: middle;
+}
+#top, #bottom, #background{
+    width: inherit;
+}
+#top{
+    background: url("../img/tops/top.jpg") no-repeat scroll center top transparent;
+    height: 42px;
+}
+#background {
+    background: url('../img/backgrounds/bg.jpg') repeat-y scroll center top transparent;
+}
+#bottom {
+    background: url("../img/footers/footer.jpg") no-repeat scroll center top transparent;
+    font-size: 11px;
+    height: 72px;
+    padding-top: 5px;
+    text-align: center;
+}
+#content {
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 500px;
+}
+.titleFrame {
+    width: 250px;
+}
+.titleFrameLong {
+    width: 300px;
+}
+.titleFrame, .titleFrameLong {
+    margin: 0 auto;
+    text-align: center;
+}
+.frame, .titleFrame, .titleFrameLong {
+    background-color: #000000;
+    padding: 2px;
+}
+.innerFrame {
+    border: 2px solid #382418;
+    padding: 4px;
+}
+.scroll {
+    margin: 0 auto;
+    width: 493px;
+}
+.scroll .topSection {
+    background: url("scrollsplittop.gif") no-repeat scroll center top transparent;
+    height: 34px;
+}
+.scroll .bottomSection {
+    background: url("scrollsplitbottom.gif") no-repeat scroll center top transparent;
+    height: 30px;
+}
+.scroll .background {
+    background: url("scrollingscroll2.gif") no-repeat scroll center top transparent;
+}
+.scroll .content {
+    margin: 0 auto;
+    position: relative;
+    width: 370px;
+}
+.listScroll {
+    background: url("listscroll.gif") no-repeat scroll center top transparent;
+    height: 283px;
+    padding: 50px 0;
+    position: relative;
+    width: 246px;
+}
+.listScrollTitle {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 246px;
+}
+.stoneBox {
+    background: url("stoneback.gif") repeat scroll 0 0 #4D422E;
+    border: 4px outset #373737;
+    color: #FFFFFF;
+    padding: 2px;
+    text-align: center;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+
+.stoneBox {
+    margin-bottom: 3px;
+}
+.stoneBox150 {
+    margin: 0 auto 3px;
+    width: 139px;
+}
+.stoneBox95 {
+    width: 84px;
+}
+.manualSectionRight {
+.pageButton {
+    background: url("stoneback.gif") repeat scroll 0 0 #4D422E;
+    border: 4px outset #373737;
+}
+.nextPage, .prevPage {
+    display: block;
+    height: 35px;
+    margin: 2px;
+    width: 74px;
+}
+.nextPage {
+    background: url("../nextpage.gif") no-repeat scroll center top transparent;
+}
+.prevPage {
+    background: url("../prevpage.gif") no-repeat scroll center top transparent;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.centerText {
+    text-align: center;
+}
+.leftText {
+    text-align: left;
+}
+.leftText {
+    text-align: right;
+}
+.justifiedText {
+    text-align: justify;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.clear {
+    clear: both;
+    height: 0;
+}

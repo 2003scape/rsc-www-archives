@@ -1,0 +1,215 @@
+body {
+	background:#036;
+	color:#000;
+	margin:0;
+	text-align:center;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:10px;
+	margin-bottom:20px;
+}
+
+a { color:#036; }
+a:active { color:#369; }
+img { border:0; }
+table { font:verdana 10px; }
+form { margin:0; padding:0; }
+
+
+#GCMulti { background-image:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/game_cat_b_multiplayer.gif); }
+#GCLearn { background-image:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/game_cat_b_learn.gif); }
+#GCAction { background-image:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/game_cat_b_action.gif); }
+#GCPuzzle { background-image:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/game_cat_b_puzzle.gif); }
+#GCShoot { background-image:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/game_cat_b_shoot.gif); }
+#GCSport { background-image:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/game_cat_b_sport.gif); }
+
+#header {
+	margin-bottom:5px;
+}
+
+#wrapper {
+	margin:0 auto;
+	border:2px solid #39f;
+	border-top:none;
+	text-align:left;
+	height:auto;
+	background:#39f;
+}
+
+#wrapper2 {
+	background:#369;
+	border:6px #369 solid;
+	clear:both;
+}
+
+#navigation {
+	margin-bottom:5px;
+	margin-top:4px;
+}
+
+#banner_top {
+	float:right;
+	height:60px;
+	width:468px;
+	border:2px solid #fff;
+}
+
+#footer {
+	text-align:right;
+	padding:0 5px;
+}
+#footer img {
+	vertical-align:-55%;
+}
+#footer a {
+	color:#fff;
+}
+
+#advert {
+	display:none;
+}
+
+.sidebar {
+	width:156px;
+	_width:140px;
+	background:#fff;
+	padding:5px;
+	margin-bottom:5px;
+}
+.sidebar ol {
+	padding:0; margin:5px 0 5px 0;
+	color:#369;
+	font-weight:bold;
+	list-style-position:inside;
+}
+.sidebar li {
+	padding:0; margin:0;
+}
+.sidebar a {
+	margin-left:6px;
+	font-weight:normal;
+}
+.sidebar ul.o {
+	margin:3px 0; padding:0;
+	list-style-type:none;
+}
+.sidebar .o li {
+	padding-left:12px;
+	background:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/bullet_orange.gif) left no-repeat;	
+}
+.sidebar .o a {
+	font-weight:bold;
+	color:#f90;
+	margin-left:0;
+}
+
+.orange {
+	background:#f90;
+}
+.blue {
+	background:#f90;
+}
+
+#footer {
+	color:#fff;
+}
+
+.left, .right {
+	background:#fff;
+	border-top:5px solid #369;
+	padding:0 5px 5px 5px;
+}
+.left { border-right:3px solid #369; }
+.right { border-left:2px solid #369; }
+
+#mainCenter {
+	padding:0 5px 0 5px;
+}
+#mainCenter ul {
+	margin:3px 0; padding:0;
+	list-style-type:none;
+	clear:both;
+}
+#mainCenter li {
+	padding-left:12px;
+	background:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/bullet_blue.gif) left no-repeat;
+}
+#mainCenter .o {
+	font-weight:bold;
+	background:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/bullet_orange.gif) left no-repeat;
+}
+#mainCenter .o a {
+	color:#f90;
+}
+#mainCenter .thumb {
+	margin-right:5px;
+}
+
+.bBorder {
+	padding:3px;
+	border:2px solid #fff;
+	background:#369;
+	width:156px;
+	margin-top:5px;
+}
+
+.float {
+	float:left;
+	width:68px;
+	margin:0 5px 8px 4px;	
+	_margin:0 2px 8px 3px;
+}
+
+.cashPrizes {
+	background:#fff;
+	padding:1px 0;
+	font-size:9px;
+}
+.cashPrizes .header {
+	margin:3px 5px 0 5px;
+}
+.cashPrizes .pic {
+	background:none;
+	padding:0;
+}
+.cashPrizes a {
+	padding-left:10px;
+	background:url(/web/20050524205436/http://images-vip.napmia.miniclip.com/Images/bullet_blue.gif) left 3px no-repeat;
+}
+
+.borderBottom {
+	border-bottom:5px solid #369;
+}
+
+.GC {
+	display:block;
+	width:173px;
+	_width:173px;
+	min-height:13px;
+	_height:13px;
+	background:url(/web/20050524205436/http://www.miniclip.com/css/null) top left no-repeat #27c;
+	font-size:10px;
+	color:#fff;
+	font-weight:bold;
+	padding:9px 4px;
+	text-transform:uppercase;
+}
+.GC:hover { 
+	text-decoration:none;
+	color:#fff;
+}
+.GC:visited { color:#fff; }
+
+#iToolbar { display:none; }
+
+#toolbarAd {
+	display:block;
+	height:23px;
+	background:url(/web/20050524205436/http://www.miniclip.com/toolbar/images/toolbar-back.jpg) #ECECEC;
+}
+#toolbarAd a {
+	display:none;
+	height:23px;
+	background:url(/web/20050524205436/http://www.miniclip.com/toolbar/images/current-toolbar.jpg) left top no-repeat;
+	text-indent:-9999px;
+	text-decoration:none;
+}

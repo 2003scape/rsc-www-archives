@@ -1,0 +1,376 @@
+div.position {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: 80;
+    width: 3px;
+}
+
+div.position2 {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: 0;
+    width: 3px;
+    top: -93px;
+    bottom: 100px;
+}
+
+div.position3 {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: 0;
+    width: 3px;
+    top: -26px;
+}
+
+div.position4 {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: -210;
+    width: 3px;
+    top: -40px;
+    bottom: -100px;
+    float: right;
+}
+
+div.position5 {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: -210;
+    width: 3px;
+    top: -28px;
+    bottom: 0px;
+    float: left;
+}
+
+div.position6 {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: 25;
+    width: 3px;
+    top: -16px;
+    bottom: 0px;
+    float: left;
+}
+
+div.position7 {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: -215;
+    width: 3px;
+    top: -26px;
+    bottom: 0px;
+    float: left;
+}
+
+div.position8 {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: 10;
+    width: 3px;
+    top: -16px;
+    bottom: 0px;
+    float: right;
+}
+
+div.position9 {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: -225;
+    width: 3px;
+    top: 0px;
+    bottom: 0px;
+    float: left;
+}
+
+div.position10 {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: 0;
+    width: 3px;
+    top: -26px;
+    bottom: 0px;
+    float: right;
+}
+
+.floating-box {
+    float: left;
+    width: 98px;
+    height: 80px;
+    margin: 10px;
+    position: relative; 
+    top:8px;
+    left: 300px
+    bottom: 0px;
+    
+}
+
+.floating-box2 {
+    float: left;
+    width: 212px;
+    height: 142px;
+    margin: 0px;
+    position: relative; 
+    top:18px;
+    left:0px
+    bottom: 0px;
+    
+}
+
+.floating-box3 {
+    float: left;
+    width: 105px;
+    height: 42px;
+    margin: 10px;
+    position: relative; 
+    top: 30px;
+    left: 0px
+    bottom: 0px;
+    right: -80px;
+    
+}
+
+.floating-box4 {
+    float: left;
+    width: 128px;
+    height: 96px;
+    margin: 10px;
+    position: relative; 
+    top: 0px;
+    left: 0px
+    bottom: 0px;
+    right: 0px;
+    
+}
+
+.floating-box5 {
+    float: left;
+    width: 134px;
+    height: 99px;
+    margin: 10px;
+    position: relative; 
+    top: 6px;
+    left: 0px
+    bottom: 0px;
+    right: -80px;
+    
+}
+
+
+.floated_img {
+    float: left;
+
+}
+
+.floated_img2 {
+    float: right;
+}
+
+.floated_img3 {
+    float: left;
+}
+
+.floated_img4 {
+    float: right;
+}
+
+.floating-box6 {
+    float: left;
+    width: 128px;
+    height: 96px;
+    margin: 10px;
+    position: relative; 
+    top: -10px;
+    left: 0px
+    bottom: 0px;
+    right: 0px;
+
+}
+
+
+.floating-box7 {
+    float: left;
+    width: 134px;
+    height: 99px;
+    margin: 10px;
+    position: relative; 
+    top: 28px;
+    left: 0px
+    bottom: 0px;
+    right: -80px;
+    
+}
+
+
+.floating-box8 {
+    float: left;
+    width: 118px;
+    height: 102px;
+    margin: 10px;
+    position: relative; 
+    top: -7px;
+    left: 0px
+    bottom: 0px;
+    right: 0px;
+    
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.heading { 
+   position: absolute; 
+   top: 6px; 
+   left: 67; 
+   right: 0px;
+   width: 100%; 
+}
+
+.heading2 { 
+   position: absolute; 
+   top: 6px; 
+   left: 280; 
+   right: 100px;
+   width: 100%; 
+}
+
+.heading3 { 
+   position: absolute; 
+   top: 207px; 
+   left: 51; 
+   right: 0px;
+   width: 100%; 
+}
+
+
+.heading4 { 
+   position: absolute; 
+   top: 208px; 
+   left: 299; 
+   right: 100px;
+   width: 100%; 
+}
+
+.heading5 { 
+   position: absolute; 
+   top: 383px; 
+   left: 83; 
+   right: 0px;
+   width: 100%; 
+}
+
+.heading6 { 
+   position: absolute; 
+   top: 383px; 
+   left: 293; 
+   right: 100px;
+   width: 100%; 
+}
+
+.heading7 { 
+   position: absolute; 
+   top: 575px; 
+   left: 90; 
+   right: 0px;
+   width: 100%; 
+}
+
+.heading8 { 
+   position: absolute; 
+   top: 575px; 
+   left: 290; 
+   right: 100px;
+   width: 100%; 
+}
+
+INPUT,SELECT,TEXTAREA {
+	background-color: black;
+	color: white;
+	border-color: #444;
+}
+
+INPUT,SELECT {
+	font-size: x-small;
+}
+
+#uid {
+	background-color: black;
+	color: white;
+	border: 2px inset #444;
+	border-color: #f5f5f5;
+	text-align: center;
+	width: 33px;
+}
+
+#divfix {
+  /* fixed position a zero-height full width container */
+  position: fixed;
+  top: 180;
+  left: 0;
+  right: 0;
+  /* center all inline content */
+  text-align: center;
+}
+
+.input {
+  display: inline-block;
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  top: 3;
+  left: 100%;
+  width: auto;
+  white-space: nowrap;
+} 
+
+.controls2 {
+  position: absolute;
+  top: 3;
+  right: 100%;
+  width: auto;
+  white-space: nowrap;
+} 
+
+#divfix2 {
+  /* fixed position a zero-height full width container */
+  position: fixed;
+  top: 190;
+  left: 0;
+  right: 0;
+  /* center all inline content */
+  text-align: center;
+}
+
+.input {
+  display: inline-block;
+  position: relative;
+}
+
+.controls3 {
+  position: absolute;
+  top: 3;
+  left: 100%;
+  width: auto;
+  white-space: nowrap;
+} 
+
+.controls4 {
+  position: absolute;
+  top: 3;
+  right: 100%;
+  width: auto;
+  white-space: nowrap;
+} 

@@ -1,0 +1,135 @@
+div.position {
+	width: 0px; right: 0px; position: relative;
+}
+div.position2 {
+	left: 0px; top: -93px; width: 3px; right: 0px; bottom: 100px; position: relative;
+}
+div.position3 {
+	left: 0px; top: -26px; width: 3px; right: 0px; position: relative;
+}
+div.position4 {
+	top: -40px; width: 3px; right: 0px; bottom: -100px; float: right; position: relative;
+}
+div.position5 {
+	top: -28px; width: 3px; right: 0px; bottom: 0px; float: left; position: relative;
+}
+div.position6 {
+	top: -16px; width: 3px; right: 0px; bottom: 0px; float: left; position: relative;
+}
+div.position7 {
+	top: -26px; width: 3px; right: 0px; bottom: 0px; float: left; position: relative;
+}
+div.position8 {
+	top: -16px; width: 3px; right: 0px; bottom: 0px; float: right; position: relative;
+}
+div.position9 {
+	top: 0px; width: 3px; right: 0px; bottom: 0px; float: left; position: relative;
+}
+div.position10 {
+	left: 0px; top: -26px; width: 3px; right: 0px; bottom: 0px; float: right; position: relative;
+}
+.floating-box {
+	margin: 0px; top: 3px; width: 98px; height: 80px; float: left; position: relative;
+}
+.floating-box2 {
+	margin: 0px; left: -7px; top: 3px; width: 212px; height: 142px; right: 0px; bottom: 0px; float: right; position: relative;
+}
+.floating-box3 {
+	margin: 0px; top: 5px; width: 105px; height: 42px; right: 0px; float: left; position: relative;
+}
+.floating-box4 {
+	margin: 0px; top: 10px; width: 128px; height: 96px; right: 0px; float: left; position: relative;
+}
+.floating-box5 {
+	margin: 0px; top: 3px; width: 134px; height: 99px; right: 0px; float: left; position: relative;
+}
+.floated_img {
+	float: left;
+}
+.floated_img2 {
+	float: right;
+}
+.floated_img3 {
+	float: left;
+}
+.floated_img4 {
+	float: right;
+}
+.floating-box6 {
+	margin: 0px; top: 1px; width: 128px; height: 96px; right: 0px; float: left; position: relative;
+}
+.floating-box7 {
+	margin: 0px; top: 20px; width: 134px; height: 99px; right: 0px; float: left; position: relative;
+}
+.floating-box8 {
+	margin: 0px; top: 5px; width: 118px; height: 102px; right: 0px; float: left; position: relative;
+}
+.image {
+	width: 100%; position: relative;
+}
+.heading {
+	top: 60px; right: 0px; position: relative;
+}
+.heading2 {
+	top: 60px; right: 100px; position: relative;
+}
+.heading3 {
+	top: 207px; right: 0px; position: relative;
+}
+.heading4 {
+	top: 208px; right: 100px; position: relative;
+}
+.heading5 {
+	top: 383px; right: 0px; position: relative;
+}
+.heading6 {
+	top: 383px; right: 100px; position: relative;
+}
+.heading7 {
+	top: 575px; right: 0px; position: relative;
+}
+.heading8 {
+	top: 575px; right: 100px; position: relative;
+}
+input {
+	border-color: rgb(68, 68, 68); color: white; background-color: black;
+}
+select {
+	border-color: rgb(68, 68, 68); color: white; background-color: black;
+}
+textarea {
+	border-color: rgb(68, 68, 68); color: white; background-color: black;
+}
+input {
+	font-size: x-small;
+}
+select {
+	font-size: x-small;
+}
+#uid {
+	border: 2px inset rgb(245, 245, 245); width: 33px; text-align: center; color: white; background-color: black;
+}
+#divfix {
+	left: 0px; text-align: center; right: 0px; position: fixed;
+}
+.input {
+	display: inline-block; position: relative;
+}
+.controls {
+	left: 100%; width: auto; white-space: nowrap; position: absolute;
+}
+.controls2 {
+	width: auto; right: 100%; white-space: nowrap; position: absolute;
+}
+#divfix2 {
+	left: 0px; text-align: center; right: 0px; position: fixed;
+}
+.input {
+	display: inline-block; position: relative;
+}
+.controls3 {
+	left: 100%; width: auto; white-space: nowrap; position: absolute;
+}
+.controls4 {
+	width: auto; right: 100%; white-space: nowrap; position: absolute;
+}

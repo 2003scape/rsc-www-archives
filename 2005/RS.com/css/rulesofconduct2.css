@@ -1,0 +1,151 @@
+@charset "UTF-8";
+.manual {
+    margin-left: -2px;
+    width: 504px;
+}
+.manual img {
+border: 0;
+    height: 65px;
+    width: 95px;
+}
+#controls, #skills {
+    text-align: center;
+}
+.manual td {
+    font-size:13px;
+    padding-top: 13px;
+    text-align: left;
+    vertical-align: top;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.listScroll {
+    background: url("../img/manual/controls/listscroll.gif") no-repeat scroll center top transparent;
+    height: 283px;
+    padding: 50px 0;
+    position: relative;
+    width: 246px;
+}
+.manual td .frame, .rules td .frame {
+    width: 236px;
+}
+.stoneBox {
+    margin-bottom: 3px;
+}
+.manualSection {
+    height: 65px;
+    margin: 3px auto;
+    width: 216px;
+}
+.w200 {
+    width: 200px;
+}
+.stoneBox150 {
+    margin: 0 auto 3px;
+    width: 139px;
+}
+.stoneBox95 {
+    width: 84px;
+}
+.manualSectionRight {
+    margin-left: 99px;
+    padding: 2px 0 0 2px;
+}
+.aboutSection {
+    height: 99px;
+    padding: 2px;
+}
+.aboutSection img {
+    margin: 1px;
+}
+.aboutSection .stoneBox {
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+.rules td {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    padding-top: 2px;
+    vertical-align: top;
+    width: 250px;
+}
+.rules td.full {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    width: 100%;
+}
+.rule12innerFrame {
+   background-color:black;
+    margin: 0 auto;
+    height: 182px;
+	width: 220px;
+    border: 2px solid #382418;
+    padding: 6px;
+	}
+.framerule12 {
+height: 182px;
+}
+.rules .frame {
+    margin: 0 auto;
+}
+.rules .innerFrame {
+    margin: 0 auto;
+    padding: 6px;
+}.rules td {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    padding-top: 2px;
+    vertical-align: top;
+    width: 250px;
+}
+
+.rules td.full {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    width: 100%;
+}
+.rules .frame {
+    margin: 0 auto;
+}
+.rules .innerFrame {
+    margin: 0 auto;
+    padding: 6px;
+}
+.rules .rulesLeft {
+    float: left;
+    width: 100px;
+}
+.rules img {
+    display: block;
+    height: 75px;
+    margin-top: 5px;
+    width: 100px;
+}
+.rules .rulesRight {
+    margin: 2px 0 2px 105px;
+}
+.rules .stoneBox {
+    margin: 2px;
+}
+#controls, #skills {
+    text-align: center;
+}
+#controls a, #skills a {
+    color: #FFFFFF;
+}
+#controls .spacer {
+    display: block;
+    height: 10px;
+}
+#skills .spacer {
+    display: block;
+    height: 4px;
+}
+#skills hr {
+    width: 30%;
+}
+.brownBg {
+    background-color: #382418;
+}

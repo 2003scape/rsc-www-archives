@@ -1,0 +1,112 @@
+div.position {
+    float: left;
+    position: relative;
+    top: 20px;
+    bottom: 0px;
+    right: 0px;
+    left: 45px;
+    width: 0px;
+}
+
+div.position2 {
+    float: left;
+    position: relative;
+    top: 5px;
+    bottom: 0px;
+    right: 0px;
+    left: 303px;
+    width: 0px;
+}
+
+div.position3 {
+    float: left;
+    position: relative;
+    top: 1px;
+    bottom: 0px;
+    right: 0px;
+    left: 37px;
+    width: 0px;
+}
+
+div.position4 {
+    float: left;
+    position: relative;
+    top: 7px;
+    bottom: 0px;
+    right: 0px;
+    left: 143px;
+    width: 0px;
+}
+
+div.position5 {
+    float: left;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 249px;
+    width: 0px;
+}
+
+div.position6 {
+    float: left;
+    position: relative;
+    top: 3px;
+    bottom: 0px;
+    right: 0px;
+    left: 355px;
+    width: 0px;
+}
+
+
+div.position7 {
+    float: left;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 63px;
+    width: 35px;
+}
+
+div.position8 {
+    float: left;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 117px;
+    width: 0px;
+}
+
+
+div.position9 {
+    float: left;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 210px;
+    width: 100px;
+}
+
+div.position10 {
+    float: left;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 242px;
+    width: 0px;
+}
+
+.floating-box {
+    width: 237px;
+    height: 30px;
+    margin: 0px;
+    position: relative; 
+    top:0px;
+    left: 0px
+    bottom: 0px;
+    
+}

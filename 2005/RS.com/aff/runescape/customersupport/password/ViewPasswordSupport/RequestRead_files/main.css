@@ -1,0 +1,75 @@
+BODY {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+TD {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+P {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+.b {
+	BORDER-RIGHT: #373737 3pt outset; BORDER-TOP: #373737 3pt outset; BORDER-LEFT: #373737 3pt outset; BORDER-BOTTOM: #373737 3pt outset
+}
+.b2 {
+	BORDER-RIGHT: #570700 3pt outset; BORDER-TOP: #570700 3pt outset; BORDER-LEFT: #570700 3pt outset; BORDER-BOTTOM: #570700 3pt outset
+}
+.e {
+	BORDER-RIGHT: #382418 2px solid; BORDER-TOP: #382418 2px solid; BORDER-LEFT: #382418 2px solid; BORDER-BOTTOM: #382418 2px solid
+}
+.c {
+	TEXT-DECORATION: none
+}
+A.c:hover {
+	TEXT-DECORATION: underline
+}
+.white {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.red {
+	COLOR: #e10505; TEXT-DECORATION: none
+}
+.lblue {
+	COLOR: #9db8c3; TEXT-DECORATION: none
+}
+.dblue {
+	COLOR: #0d6083; TEXT-DECORATION: none
+}
+.yellow {
+	COLOR: #ffe139; TEXT-DECORATION: none
+}
+.green {
+	COLOR: #04a800; TEXT-DECORATION: none
+}
+.purple {
+	COLOR: #c503fd; TEXT-DECORATION: none
+}
+.pink {
+	COLOR: #faa8aa; TEXT-DECORATION: none
+}
+A.c:hover {
+	TEXT-DECORATION: underline
+}
+A.white:hover {
+	TEXT-DECORATION: underline
+}
+A.red:hover {
+	TEXT-DECORATION: underline
+}
+A.lblue:hover {
+	TEXT-DECORATION: underline
+}
+A.dblue:hover {
+	TEXT-DECORATION: underline
+}
+A.yellow:hover {
+	TEXT-DECORATION: underline
+}
+A.green:hover {
+	TEXT-DECORATION: underline
+}
+A.purple:hover {
+	TEXT-DECORATION: underline
+}
+A.pink:hover {
+	TEXT-DECORATION: underline
+}

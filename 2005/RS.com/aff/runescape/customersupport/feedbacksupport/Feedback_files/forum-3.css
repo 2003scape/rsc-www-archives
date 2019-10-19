@@ -1,0 +1,21 @@
+#border {
+     outline: 2px solid #000000;
+}
+
+#table-cell {
+     display: table-cell ;
+     width: 150px;
+}
+
+.floating-box {
+    float: right;
+    text-align: left;
+    width: 121px;
+    height: 65px;
+    margin: 0px 0px -57px 0px;
+    top: -65px;
+    position: relative; 
+    left: 0px
+    bottom: 0px;
+    
+}

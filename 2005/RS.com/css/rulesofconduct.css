@@ -1,0 +1,160 @@
+@charset "UTF-8";
+html, body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 100%;
+    margin: 0;
+    min-width: 800px;
+    padding: 0;
+}
+a, a:visited {
+    color:#A1B762;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#container {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 100%;
+    margin: 0 auto;
+    width: 612px;
+}
+#innerContainer {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    vertical-align: middle;
+}
+#top, #bottom, #background {
+    width: inherit;
+}
+#top {
+    background: url("../../img/tops/top.jpg") no-repeat scroll center top transparent;
+    height: 42px;
+}
+#background {
+    background: url("../../img/backgrounds/bg.jpg") repeat-y scroll center top transparent;
+}
+#bottom {
+    background: url('../../img/footers/footer.jpg') no-repeat scroll center top transparent;
+    font-size: 11px;
+    height: 72px;
+    padding-top: 5px;
+    text-align: center;
+}
+#content {
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 500px;
+}
+.titleFrame {
+    width: 250px;
+}
+.titleFrameLong {
+    width: 300px;
+}
+.titleFrame, .titleFrameLong {
+    margin: 0 auto;
+    text-align: center;
+}
+.frame, .titleFrame, .titleFrameLong {
+    background-color: #000000;
+    padding: 2px;
+}
+.innerFrame {
+    border: 2px solid #382418;
+    padding: 4px;
+	height:auto;
+}
+
+.scroll {
+    margin: 0 auto;
+    width: 493px;
+}
+.scroll .topSection {
+    background: url("../img/layout/scrollsplittop.gif") no-repeat scroll center top transparent;
+    height: 34px;
+}
+.scroll .bottomSection {
+    background: url("../img/layout/scrollsplitbottom.gif") no-repeat scroll center top transparent;
+    height: 30px;
+}
+.scroll .background {
+    background: url("../img/layout/scrollingscroll2.gif") no-repeat scroll center top transparent;
+}
+.scroll .content {
+    margin: 0 auto;
+    position: relative;
+    width: 370px;
+}
+.listScroll {
+    background: url("../img/layout/listscroll.gif") no-repeat scroll center top transparent;
+    height: 283px;
+    padding: 50px 0;
+    position: relative;
+    width: 246px;
+}
+.listScrollTitle {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 246px;
+}
+.stoneBox {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    background: url("../../img/title/stoneback.gif") repeat scroll 0 0 #4D422E;
+    border: 4px outset #373737;
+    color: #FFFFFF;
+    padding: 2px;
+    text-align: center;
+}
+.pageButton {
+    background: url("../../img/title/stoneback.gif") repeat scroll 0 0 #4D422E;
+    border: 4px outset #373737;
+}
+.nextPage, .prevPage {
+    display: block;
+    height: 35px;
+    margin: 2px;
+    margin-top:100px;
+}
+.nextPage {
+    background: url("../../img/manual/nextpage.gif") no-repeat scroll center top transparent;
+}
+.prevPage {
+    background: url("../../img/manual/prevpage.gif") no-repeat scroll center top transparent;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.centerText {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+.leftText {
+    text-align: left;
+}
+.leftText {
+    text-align: right;
+}
+.justifiedText {
+    text-align: justify;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.clear {
+    clear: both;
+    height: 0;
+}

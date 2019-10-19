@@ -1,0 +1,13 @@
+INPUT,SELECT,TEXTAREA {
+	background-color: white;
+	color: black;
+	border-color: inset #444;
+}
+
+div.position {
+    position: relative;
+    bottom: 10;
+    right: 0;
+    left: 800;
+    width: 3px;
+}

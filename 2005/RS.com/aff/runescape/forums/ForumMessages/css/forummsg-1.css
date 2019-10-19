@@ -1,0 +1,41 @@
+/* Hides from IE5-mac and Mozilla \*/
+* html #contentmsg .message { height: 1%; }
+* html #contentmsg .rightpanel { width:580px; }
+/* End hide from IE5-mac and Mozilla */
+#contentmsg .message { text-align: left; border: 2px solid #382418; margin-bottom: 15px; background-color: #1c1610; }
+#contentmsg .leftpanel { vertical-align: top; width: 20%; padding: 10px 0; background-color: #261d14;}
+#contentmsg .rightpanel { margin-right: 10px; padding-left: 3%; word-wrap: break-word; overflow:hidden;  }
+*:first-child+html #contentmsg .msgcontents { display: block; width: 580px; } /* IE7 only */
+#contentmsg .msgcontents { padding: 10px 10px 2em 0; word-wrap: break-word; overflow:hidden; width:570px; }
+#contentmsg .msgtime { color: #888; text-align: right; margin-right: 5px; }
+#contentmsg .hiddenmsg { color: #888; }
+#contentmsg .msgcommands { text-align: center; margin-top: 5px; }
+#contentmsg .modtype, #content .msgcommands { font-size: 8pt; text-align: center; }
+#contentmsg .msgcreator { text-align: center; }
+#contentmsg .msgcreator A { color: white; }
+#contentmsg .mod { background-color: #092009; border-color: #294729; }
+#contentmsg .mod .leftpanel { background-color: #092709; }
+#contentmsg .moved { background-color: #050525; border-color: #16164a; }
+#contentmsg .moved .leftpanel { background-color: #050530; }
+#contentmsg .jmod .leftpanel { background-color: #4c4205; }
+#contentmsg .jmod { background-color: #3e3605; border-color: #8c7a16; }
+#contentmsg .hid .leftpanel { background-color: #270909; }
+#contentmsg .hid { background-color: #200909; border-color: #472929; }
+#contentmsg .msghighlight { border: 2px solid yellow; color: white; }
+#contentmsg .russian .leftpanel { background-color: #780000;}
+#contentmsg .russian{ background-color: #680000; border-color: #580000; }
+
+#contentmsg .halloween .leftpanel { background-color: #E56616; color:black; }
+#contentmsg .halloween { background-color: #B75112; border-color: black; color:black; }
+
+#contentmsg .lolbert .leftpanel { 
+    background-color: #4c4205; 
+    background-image:url('../img/forum/smileys/bert.gif');
+    background-repeat:repeat;
+}
+#contentmsg .lolbert { 
+    background-color: #3e3605; 
+    background-image:url('../img/forum/smileys/lolbert.png'); 
+    background-repeat:repeat;
+    border-color: #8c7a16; 
+}

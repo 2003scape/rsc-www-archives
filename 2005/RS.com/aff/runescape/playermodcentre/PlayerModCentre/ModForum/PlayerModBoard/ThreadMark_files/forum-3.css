@@ -1,0 +1,30 @@
+input {
+	border-color: rgb(68, 68, 68); color: white; background-color: black;
+}
+select {
+	border-color: rgb(68, 68, 68); color: white; background-color: black;
+}
+textarea {
+	border-color: rgb(68, 68, 68); color: white; background-color: black;
+}
+input {
+	font-size: x-small;
+}
+select {
+	font-size: x-small;
+}
+#uid {
+	border: 2px inset rgb(245, 245, 245); width: 33px; text-align: center; color: white; background-color: black;
+}
+#divfix {
+	left: 0px; top: 373px; text-align: center; right: 0px; position: fixed;
+}
+.input {
+	display: inline-block; position: relative;
+}
+.controls {
+	left: 100%; top: 3px; width: auto; white-space: nowrap; position: absolute;
+}
+.controls2 {
+	top: 3px; width: auto; right: 100%; white-space: nowrap; position: absolute;
+}

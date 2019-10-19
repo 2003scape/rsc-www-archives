@@ -1,0 +1,33 @@
+INPUT,SELECT,TEXTAREA {
+	background-color: white;
+	color: black;
+}
+
+INPUT,SELECT {
+	font-size: x-small;
+}
+
+.box1 {
+	width:310px;
+}
+
+.box2 {
+	width:345px;
+	height: 50px;
+}
+
+.box3 {
+	width:65px;
+}
+
+.box4 {
+	width:65px;
+}
+
+.box5 {
+	width:196px;
+}
+
+.checkbox {
+	border: none;
+}

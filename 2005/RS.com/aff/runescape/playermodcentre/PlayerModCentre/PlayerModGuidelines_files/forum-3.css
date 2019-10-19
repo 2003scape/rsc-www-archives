@@ -1,0 +1,17 @@
+#table-cell {
+	display: table-cell;
+	width: 100px;
+}
+
+.floating-box {
+    float: right;
+    text-align: left;
+    width: 80px;
+    height: 130px;
+    margin: 0px 0px -57px 0px;
+    top: 0px;
+    position: relative; 
+    left: 0px;
+    bottom: 0px;
+    
+}

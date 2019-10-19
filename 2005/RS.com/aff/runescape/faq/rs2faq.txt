@@ -1,0 +1,52 @@
+    quote When is RS2/3D graphics update coming out?
+    The beta test will begin here on www.runescape.com on the 1st-December-2003.
+
+    We recommend you keep an eye on our News section, as we regularly post information here indicating our latest progress.
+
+    quote Are you going to be releasing an RS2 beta? How do I sign up for this?
+    Yes, on 1st December 2003 we will launch a public beta-test on our website to be sure it is working properly.
+
+    Since we expect a LOT of players will want to try the beta and we will only have a limited number of servers to run it on, the beta will initially only be available to RuneScape members.
+
+    Once we are happy that everything is working ok, which will hopefully not take too long, we will then make RS2 available to EVERYONE (both free players and members).
+
+    quote Will I lose my items or stats when RS2 comes out?
+    No you will not lose any items or stats when RS2 comes out.
+
+    During the public-beta phase (See above), only testing accounts will be used in the beta.
+
+    Once the beta is complete, ALL existing runescape accounts will be converted across, and all items and stats will be transfered with them, so you won't lose anything.
+
+    quote What new features will be in RS2 upon its launch?
+    There are going to be many new features introduced when we launch RS2. In particular the updates focuses on
+
+    Improved graphics
+    Improved much easier to use interfaces
+    Revised combat system
+    Adding more flexbility so future updates can have far more variety in them.
+
+    As these features are still being worked on and things are likely to change, we recommend you read our News section for the latest sneak previews of what we are adding to RS2.
+
+    We are unfortunately unable to tell you any more than is already available in the RuneScape news section.
+
+    quote Will RS2 be for both free and paying members?
+    Yes
+
+    The RS2 beta will be members only, but the full RS2 launch will be made available to everyone.
+
+    quote Are you going to continue running RS1 alongside RS2? What if I don't want the new graphics?
+    We've tried very hard to make sure that the new graphics still have the same RuneScapey feel that you are used to, and don't make the game harder to play.
+
+    RS2 is still very simple to play and it's still very clear to see what you are doing and where you are going. It just looks better!
+
+    As you can imagine it would not be possible for us to run and update 2 different versions of the game, each having a completely different game engine. If we did so it would literally halve the rate at which we could update the game.
+
+    At a future date we MAY bring back an rs1 server for those of you who have fond memories of the old game, but it would be purely for a bit of extra fun, and would be run without any customer support or updates.
+
+    quote Are you going to be releasing any new items/skills before RS2?
+    It's unlikely anything major will be released. We will continue of course to release quests on a regular basis for our members, most of which do contain new items anyway. However due to the time it takes to convert current game skills/items to the new system and the fact we are all working on the new RS2 update we will be holding off on new skills and major items until we launch RS2.
+
+    quote Will any new quests be coming out with RS2?
+    No, we've got enough work improving and updating the exisitng quests and skills.
+
+    New quests will follow shortly after the update however.

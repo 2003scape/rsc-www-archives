@@ -1,0 +1,18 @@
+#country {
+     width: 292px;
+}
+
+.inlinetable {
+     float:left
+}
+
+.position {
+     
+}
+
+.floating-box {
+    float: left;
+     width: 2370px;
+     height: 30px;
+     margin: 10px;
+} 
