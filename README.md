@@ -23,7 +23,7 @@ this is the first revision of the website with the stone aesthetic from early
 a website with assets from 2004-2005. not sure where it originated from, but
 it's fairly complete.
 
-![](./screenshots/2005-homepage?raw=true)
+![](./screenshots/2005-homepage.png?raw=true)
 
 ## license
 COPYRIGHT (17 U.S.C. SECTION 108(a)(3))
